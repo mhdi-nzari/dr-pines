@@ -1,0 +1,18 @@
+extends src/Partials/_layout
+
+block headstyle
+  link(rel="stylesheet", type="text/css", href="src/Styles/index/index.css")
+  // The initial part of the website
+block header
+  include src/Partials/header/_header
+  // The middle part of the website
+block content
+  include src/Partials/main_element/_slider
+  include src/Partials/main_element/_product
+
+block footer
+  include src/Partials/footer/_footer
+
+  // Attached links & Script Which must be loaded at the end
+block script
+  script(src="/node_modules/owl.carousel/dist/owl.carousel.min.js") 

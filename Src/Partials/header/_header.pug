@@ -1,0 +1,21 @@
+header.fixed__nav
+     section.header
+          .container-fluid
+               .row 
+                    .col-xl-2.flex--r--c
+                         a.img-logo(href="/index.html")
+                              img(src="/Src/Images/logo_en.png", alt="website logo", width='', height='' )
+
+                    .col-xl-7
+                         nav.navbar.d-none.d-lg-block
+                              ul.parent__menu.d_flex 
+                                   each val, index in ['خانه', 'محصولات', 'مشتریان' , 'مشاوران' , 'درباره ما' , 'تماس با ما ']
+                                        li= val
+
+                    .col-xl-3.flex--r--c
+                         include  ./_accessible_menu
+               
+                         
+                                   
+               
+           

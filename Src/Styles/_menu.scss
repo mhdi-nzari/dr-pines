@@ -1,0 +1,27 @@
+.fixed__nav {
+  @include fixed__nav(80px, #fff, $transition-base);
+
+  .header {
+    padding: 13px 0px;
+    
+  }
+}
+
+//>>>>>> Logo
+.img-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar{
+  @include flex__custome(row , right , center)
+}
+
+.parent__menu {
+
+
+  @include media-md {
+    flex: row;
+  }
+}

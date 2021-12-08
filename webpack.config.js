@@ -1,8 +1,14 @@
 const path = require("path");
 const webpack = require("webpack");
+var nodeExternals = require("webpack-node-externals");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
-console.log(__dirname);
+
+nodeExternals: ({
+  importType: "umd",
+},
+  console.log(__dirname));
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -10,20 +16,29 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
 
+  // exclude node_moudule
+
+  target: "node", // use require() & use NodeJs CommonJS style
+  externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
+  externalsPresets: {
+    node: true, // in order to ignore built-in modules like path, fs, etc.
+  },
+
   mode: "development",
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|webp)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: 'Images/'
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]",
+          outputPath: "Images/",
+        },
+      },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.(woff|woff2|ttf|svg|eot)$/i,
@@ -45,6 +60,8 @@ module.exports = {
     ],
   },
   plugins: [
+    // plugin for owl-carusel error
+
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -54,6 +71,10 @@ module.exports = {
     new CleanWebpackPlugin({
       verbose: true,
       cleanStaleWebpackAssets: true,
+    }),
+
+    new CopyPlugin({
+      patterns: [{ from: "Src/Images", to: "Images" }],
     }),
   ],
 };

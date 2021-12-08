@@ -17,6 +17,7 @@
     "babel-loader": "^8.2.3",
     "bootstrap": "^4.6.0",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.0.0",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-loader": "^3.0.1",
@@ -26,7 +27,8 @@
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "owl.carousel": "^2.3.4",

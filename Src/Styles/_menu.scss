@@ -3,25 +3,133 @@
 
   .header {
     padding: 13px 0px;
-    
+
+    // column primary
+    //>>>>>> Logo
+    .img-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    // column second
+    .navbar {
+      @include flex__custome(row, right, center);
+      padding: 0;
+
+      .parent__menu {
+        @include media-md {
+          flex: row;
+        }
+        .link {
+          position: relative;
+          margin: 0px 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: unset;
+          align-items: center;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -8px;
+            width: 0%;
+            height: 3px;
+            @include border-radius;
+            background-color: $color-base;
+            @include flex-c-center;
+            @include transition(all 700ms ease-in-out);
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+          .parent__menu__item {
+            @include t-style(16px, 400, $text-primary);
+            transition: $transition-base;
+            overflow: hidden;
+
+            &:hover {
+              color: $color-base;
+            }
+          }
+        }
+      }
+    }
+
+    // column tertiary
+
+    .parent__two__elements {
+      @include d-flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .item_detail {
+        .search {
+          margin: 0px 10px;
+        }
+
+        .buy {
+          position: relative;
+
+          .buy__item__badge {
+            background-color: var(--data-color);
+            color: #fff;
+            font-size: 1.2rem !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include border-radius(50px);
+            width: 20px;
+            right: -4px;
+            height: 20px;
+            top: -5px;
+            position: absolute;
+            @include transition(all 600ms ease-in-out);
+            &:hover{
+              transform: rotate(360deg)
+            }
+          }
+        }
+      }
+      .btn__group {
+
+        .btn {
+        
+
+          @include button-size(
+            11px,
+            16px,
+            1.6rem,
+            1.7rem,
+            $radius-base,
+            #fff,
+            $color-base
+          );
+         
+
+          &:hover {
+            background-color: white;
+            color: $text-primary;
+            border: 1px solid $color-base;
+          }
+          &:first-child {
+            margin: 0 0 0 5px;
+            @extend .btn;
+            background-color: unset;
+            color: $color-second;
+            
+          }
+          &:last-child {
+            margin: 0 5px 0 0;
+
+          }
+        }
+      }
+    }
   }
-}
 
-//>>>>>> Logo
-.img-logo {
-  display: flex;
-  align-items: center;
-
-}
-
-.navbar{
-  @include flex__custome(row , right , center)
-}
-
-.parent__menu {
-
-
-  @include media-md {
-    flex: row;
+  //customize .row .column
+  .row .column:nth-child(2) {
+    @include flex__custome(row, flex-start, center);
   }
 }

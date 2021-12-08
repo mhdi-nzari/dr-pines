@@ -10,8 +10,10 @@
 $color-base: var(--data-color);
 $color-second: var(--text-primary);
 
-$color-hover: var(--color3);
-$color-base-hover: var(--color4);
+$text-primary: var(--text-primary);
+
+// $color-hover: var(--color3);
+// $color-base-hover: var(--color4);
 
 //***** box-shadow
 $enable-shadows: false !default;
@@ -26,6 +28,13 @@ $shadow-base: 0 8px 24px rgba(0, 0, 0, 15%) !default;
     -moz-box-shadow: $shadow;
     box-shadow: $shadow;
   }
+}
+
+//***** text style
+@mixin t-style($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
 }
 
 //***** border-radius
@@ -84,10 +93,10 @@ $scale-base: scale(1.1) !default;
     }
   }
 }
-
+$transition-bases: all 700s ease-in-out !default;
 //***** transition
 $enable-transitions: true !default;
-$transition-base: all 600ms ease-in-out !default;
+$transition-base: all 700s ease-in-out !default;
 @mixin transition($transition...) {
   @if $enable-transitions {
     @if length($transition) ==0 {
@@ -122,11 +131,15 @@ $transition-base: all 600ms ease-in-out !default;
   $padding-x,
   $font-size,
   $line-height,
-  $border-radius
+  $border-radius,
+  $color-btn,
+  $background
 ) {
   padding: $padding-y $padding-x;
   font-size: $font-size;
   line-height: $line-height;
+  color: $color-btn;
+  background-color: $background;
   // Manually declare to provide an override to the browser default
   @if $enable-rounded {
     -webkit-border-radius: $border-radius;

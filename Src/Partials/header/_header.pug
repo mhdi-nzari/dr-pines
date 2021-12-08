@@ -2,20 +2,16 @@ header.fixed__nav
      section.header
           .container-fluid
                .row 
-                    .col-xl-2.flex--r--c
-                         a.img-logo(href="/index.html")
+                    .col-xl-2.flex--r--c.column
+                         a.img-logo.img-fluid(href="/index.html")
                               img(src="/Src/Images/logo_en.png", alt="website logo", width='', height='' )
 
-                    .col-xl-7
+                    .col-xl-7.column
                          nav.navbar.d-none.d-lg-block
                               ul.parent__menu.d_flex 
-                                   each val, index in ['خانه', 'محصولات', 'مشتریان' , 'مشاوران' , 'درباره ما' , 'تماس با ما ']
-                                        li= val
+                                   each val, index in ['صفحه اصلی', 'محصولات', 'مشتریان' , 'مشاوران' , 'سوالات متداول','مقالات','درباره ما' , 'تماس با ما ']
+                                        li.link
+                                             a(href="#").parent__menu__item= val
 
-                    .col-xl-3.flex--r--c
+                    .col-xl-3.flex--r--c.column
                          include  ./_accessible_menu
-               
-                         
-                                   
-               
-           

@@ -21,7 +21,7 @@
     <meta name="theme-color" content="">
     <!-- Meta Name For Seo & Optimize Website-->
     <!--Favicon Website-->
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="apple-touch-icon" href=";" sizes="180x180">
     <link rel="icon" href="" type="image/png" sizes="16x16">
     <link rel="icon" href="" type="image/png" sizes="32x32">
@@ -32,6 +32,8 @@
     <!-- Set Css Link-->
     <link rel="stylesheet" type="text/css" href="/src/Styles/common&amp;related.css">
     <link rel="stylesheet" type="text/css" href="src/Styles/index/index.css">
+    <link rel="stylesheet" href="./Src/Styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./Src/Styles/owl.theme.default.min.css">
     <!-- The initial part of the website-->
   </head>
   <body> 
@@ -40,8 +42,9 @@
       <section class="header">
         <div class="container-fluid">
           <div class="row"> 
-            <div class="col-xl-2 flex--r--c column"><a class="img-logo img-fluid" href="/index.html"><img src="/Src/Images/logo_en.png" alt="website logo" width="" height=""></a></div>
-            <div class="col-xl-7 column">
+            <div class="col-md-6 col-6 d-md-block d-lg-none"></div>
+            <div class="col-xl-1 col-lg-1 col-6 flex--r--c column"><a class="img-logo img-fluid" href="/index.html"><img src="/Src/Images/logo_en.png" alt="website logo" width="" height=""></a></div>
+            <div class="col-xl-8 column flex--r--c">
               <nav class="navbar d-none d-lg-block">
                 <ul class="parent__menu d_flex"> 
                   <li class="link"><a class="parent__menu__item" href="#">صفحه اصلی</a></li>
@@ -55,10 +58,9 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-xl-3 flex--r--c column">
+            <div class="col-xl-3 d-none d-lg-block flex--r--c column">
               <div class="parent__two__elements">
-                <div class="item_detail"><a class="search" href="#"><img class="search__item" src="/Src/Images/Search.svg" alt="" width="" height=""></a><a class="buy" href="#"><img class="buy__item" src="/Src/Images/Buy 1.svg" alt="" width="" height=""><span class="buy__item__badge">11</span></a></div>
-                <div class="btn__group"> <a class="btn btn__group--panel" href="">پنل مشاوران</a><a class="btn btn--active btn__group--login" href="">ورود / ثبت نام</a></div>
+                <div class="item_detail"><a class="search" href="#"><img class="search__item" src="/Src/Images/Search.svg" alt="" width="" height=""></a><a class="buy" href="#"><img class="buy__item" src="/Src/Images/Buy 1.svg" alt="" width="" height=""><span class="buy__item__badge">11</span></a></div><a class="btn btn__group--panel d-none d-lg-flex" href="">پنل مشاوران</a><a class="btn btn--active btn__group--login d-none d-md-block" href="">ورود / ثبت نام</a>
               </div>
             </div>
           </div>
@@ -68,12 +70,27 @@
     <!-- The middle part of the website-->
     <main> 
       <!-- The middle part of the website-->
+      <section class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-12">
+              <div class="owl-carousel owl-theme Intro-slider">
+                <div class="owl-item">item1</div>
+                <div class="owl-item">item2</div>
+                <div class="owl-item">item3</div>
+                <div class="owl-item">item4</div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12"></div>
+          </div>
+        </div>
+      </section>
       <!--******** end of #main ********//-->
     </main>
     <!-- Attached links & Script Which must be loaded at the end-->
     <!-- Attached links & Script Which must be loaded at the end-->
     <script src="/dist/bundle.js"> </script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"> </script>
+    <script src="/Src/Scripts/owl.carousel.min.js"></script>
     <script src="/Src/Scripts/customize.js"> </script>
   </body>
 </html>

@@ -2,13 +2,17 @@
   @include fixed__nav(80px, #fff, $transition-base);
 
   .header {
-    padding: 13px 0px;
+    padding: 17px 0px;
 
     // column primary
     //>>>>>> Logo
     .img-logo {
       display: flex;
       align-items: center;
+
+      img{@include media-xs{
+width: 80px
+      }}
     }
 
     // column second
@@ -27,6 +31,7 @@
           flex-direction: row;
           justify-content: unset;
           align-items: center;
+          font-size: 16px;
           &::after {
             content: "";
             position: absolute;
@@ -60,10 +65,12 @@
 
     .parent__two__elements {
       @include d-flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 100%;
 
       .item_detail {
+        @include d-flex;
+        align-items: center;
         .search {
           margin: 0px 10px;
         }
@@ -85,51 +92,39 @@
             top: -5px;
             position: absolute;
             @include transition(all 600ms ease-in-out);
-            &:hover{
-              transform: rotate(360deg)
+            &:hover {
+              transform: rotate(360deg);
             }
           }
         }
       }
-      .btn__group {
 
-        .btn {
-        
+      .btn {
+        @include button-size(
+          12px,
+          10px,
+          1.6rem,
+          1.7rem,
+          $radius-base,
+          #fff,
+          $color-base
+        );
 
-          @include button-size(
-            11px,
-            16px,
-            1.6rem,
-            1.7rem,
-            $radius-base,
-            #fff,
-            $color-base
-          );
-         
-
-          &:hover {
-            background-color: white;
-            color: $text-primary;
-            border: 1px solid $color-base;
-          }
-          &:first-child {
-            margin: 0 0 0 5px;
-            @extend .btn;
-            background-color: unset;
-            color: $color-second;
-            
-          }
-          &:last-child {
-            margin: 0 5px 0 0;
-
-          }
+        &:hover {
+          background-color: white;
+          color: $text-primary;
+          border: 1px solid $color-base;
+        }
+        &:nth-child(2) {
+          background-color: transparent;
+          color: $color-second;
         }
       }
     }
   }
 
   //customize .row .column
-  .row .column:nth-child(2) {
+  .row .column:nth-child(3) {
     @include flex__custome(row, flex-start, center);
   }
 }

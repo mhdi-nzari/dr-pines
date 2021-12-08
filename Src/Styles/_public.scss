@@ -34,6 +34,15 @@ img {
   border-style: none;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+audio, canvas, embed, iframe, img, object, svg, video {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 ol,
 ul,
 dl {

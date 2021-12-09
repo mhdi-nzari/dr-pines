@@ -4774,24 +4774,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
-.jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
-}
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem;
-  }
-}
-
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0;
-}
-
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -10296,6 +10278,9 @@ This set of fonts are used in this project under the license: (.....)
 .fixed__nav .header .parent__two__elements .item_detail .buy {
   position: relative;
 }
+.fixed__nav .header .parent__two__elements .item_detail .buy:hover .buy__item__badge {
+  transform: rotate(360deg);
+}
 .fixed__nav .header .parent__two__elements .item_detail .buy .buy__item__badge {
   background-color: var(--data-color);
   color: #fff;
@@ -10316,9 +10301,6 @@ This set of fonts are used in this project under the license: (.....)
   -ms-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
-}
-.fixed__nav .header .parent__two__elements .item_detail .buy .buy__item__badge:hover {
-  transform: rotate(360deg);
 }
 .fixed__nav .header .parent__two__elements .btn {
   padding: 12px 10px;

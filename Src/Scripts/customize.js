@@ -1,24 +1,24 @@
-$(document).ready(function () {
-  $(".Intro-slider").owlCarousel({
-    loop: true,
-    margin: 10,
-    rtl:true,
-    responsiveClass: true,
-    padding: 10,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 3,
-        nav: false,
-      },
-      1000: {
-        items: 5,
-        nav: true,
-        loop: false,
-      },
-    },
-  });
-});
+const swiper = new Swiper('.swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: true,
+   
+     // If we need pagination
+     pagination: {
+       el: '.swiper-pagination',
+     },
+   
+     // Navigation arrows
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+   
+     // And if we need scrollbar
+     scrollbar: {
+       el: '.swiper-scrollbar',
+     },
+   });
+
+
+

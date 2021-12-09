@@ -1,13 +1,5 @@
-import $ from "jquery";
-import "bootstrap";
-import bootstrap from "bootstrap";
+import $ from "./Scripts/jquery.min";
+window.jQuery = $;
+window.$ = $;
 
-
-
-
-
-
-
-
-
-
+import "./Scripts/bootstrap.bundle.min";

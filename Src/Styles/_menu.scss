@@ -78,6 +78,9 @@ width: 80px
         .buy {
           position: relative;
 
+          &:hover .buy__item__badge {
+            transform: rotate(360deg);
+          }
           .buy__item__badge {
             background-color: var(--data-color);
             color: #fff;
@@ -92,10 +95,10 @@ width: 80px
             top: -5px;
             position: absolute;
             @include transition(all 600ms ease-in-out);
-            &:hover {
-              transform: rotate(360deg);
-            }
+            
           }
+
+         
         }
       }
 

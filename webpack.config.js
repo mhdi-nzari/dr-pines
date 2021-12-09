@@ -3,6 +3,7 @@ const webpack = require("webpack");
 var nodeExternals = require("webpack-node-externals");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 
 nodeExternals: ({
@@ -14,6 +15,14 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+
+
+   
+  },
+
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
 
   // exclude node_moudule
@@ -37,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: "babel-loader",
+        use: "babel-loader",
         exclude: /node_modules/,
       },
       {
@@ -57,6 +66,8 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+
+      
     ],
   },
   plugins: [
@@ -76,5 +87,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: "Src/Images", to: "Images" }],
     }),
+
+    new TerserPlugin(),
   ],
 };

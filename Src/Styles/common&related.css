@@ -10296,6 +10296,9 @@ This set of fonts are used in this project under the license: (.....)
 .fixed__nav .header .parent__two__elements .item_detail .buy {
   position: relative;
 }
+.fixed__nav .header .parent__two__elements .item_detail .buy:hover .buy__item__badge {
+  transform: rotate(360deg);
+}
 .fixed__nav .header .parent__two__elements .item_detail .buy .buy__item__badge {
   background-color: var(--data-color);
   color: #fff;
@@ -10316,9 +10319,6 @@ This set of fonts are used in this project under the license: (.....)
   -ms-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
-}
-.fixed__nav .header .parent__two__elements .item_detail .buy .buy__item__badge:hover {
-  transform: rotate(360deg);
 }
 .fixed__nav .header .parent__two__elements .btn {
   padding: 12px 10px;

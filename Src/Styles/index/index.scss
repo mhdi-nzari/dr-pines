@@ -1,28 +1,67 @@
 @import "../base";
 
-.slider {
-  margin: 100px 0px 100px 0px;
-}
 
 // Slider___Style
+.slider {
+  margin:  50px 0px 50px 0px;
 
+  
 .swiper {
   @include border-radius();
 
-  .swiper-button-prev , .swiper-button-next{
+  .swiper-button-prev,
+  .swiper-button-next {
     z-index: 1;
     background-color: #fff;
     width: 35px;
     height: 35px;
     border-radius: 100%;
     position: absolute;
-    .left,.Right {
-      z-index: -1;
+    @include transition(background-color 400ms ease);
+
+    &:hover {
+      background-color: $color-base;
+      border: 1px solid white;
+      img {
+        filter: invert(99%) sepia(95%) saturate(0%) hue-rotate(208deg)
+          brightness(105%) contrast(100%);
+      }
     }
+
     &::after {
       content: "";
     }
   }
- 
-  
+
+  img.left,
+  img.right {
+    z-index: -1;
+  }
+}
+}
+
+// banner__Left__Style__In __ection One
+.banner--left {
+  a.banner--left--link {
+    img {
+      margin-bottom: 17px;
+      @include border-radius();
+    }
+  }
+}
+
+
+// Style__Category
+
+.category{
+  .headline{
+    .headline__title-box{
+      @include d-flex;
+
+      .headline_title__content{
+        margin: auto 10px auto 0;
+
+      }
+    }
+  }
 }

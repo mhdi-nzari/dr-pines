@@ -188,7 +188,7 @@ $transition-base: all 700s ease-in-out !default;
 
 //***** fixed navigation
 @mixin fixed__nav($height, $background, $transition) {
-  position: fixed;
+  position: sticky;
   @include box-shadow;
   width: 100%;
   z-index: 10;

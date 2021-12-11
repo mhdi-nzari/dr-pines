@@ -22,8 +22,13 @@ body {
   direction: $direction;
   background-color: var(--bg-color);
   text-align: $right;
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 1.4m;
+}
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm{
+  padding-right: 45px;
+  padding-left: 45px;
 }
 
 
@@ -106,6 +111,9 @@ h6,
 input,
 textarea {
   font-family: iranyekan !important;
+  color: $text-primary;
+  margin: 0;
+
 }
 
 a {

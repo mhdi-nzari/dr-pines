@@ -8,6 +8,9 @@ import image7 from './Images/Slider_huge3x.png';
 import image8 from './Images/Slider_small1x.png';
 import image9 from './Images/Slider_small2x.png';
 import image10 from './Images/Slider_small3x.png';
+import image11 from './Images/Category.png';
+import image12 from './Images/Category_arrow.png';
+
 
 
 

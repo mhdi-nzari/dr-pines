@@ -1,10 +1,1 @@
-.slider {
-  margin: 100px 0px 100px 0px;
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
-/*# sourceMappingURL=index.css.map */
+:root{--data-color: #7fbf57;--shadow-btn: hsla(97, 45%, 55%, 50%);--text-primary: #404751;--color-default: #e1e1e1;--bg-color: #f9f9f9}.d_flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-moz-box;display:flex}.flex--r--c{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:-moz-box;display:flex;justify-content:center;align-items:center}.slider{margin:100px 0px 100px 0px}.swiper{-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px}.swiper .swiper-button-prev,.swiper .swiper-button-next{z-index:1;background-color:#fff;width:35px;height:35px;border-radius:100%;position:absolute}.swiper .swiper-button-prev .left,.swiper .swiper-button-prev .Right,.swiper .swiper-button-next .left,.swiper .swiper-button-next .Right{z-index:-1}.swiper .swiper-button-prev::after,.swiper .swiper-button-next::after{content:""}/*# sourceMappingURL=index.css.map */

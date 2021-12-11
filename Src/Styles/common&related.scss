@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-﻿// @import "./bootstrap/scss/bootstrap.scss";
-@import "./bootstrap/scss/bootstrap.scss";
-=======
-﻿@import "./bootstrap/scss/bootstrap";
->>>>>>> 2a65d96709d81240326408ffaa84f6bc022355bc
-@import "./base";
-@import "./public";
-@import "./fonts";
-@import "./menu";
-@import "./mega-menu";
-@import "./login&sign";
+@import "bootstrap/scss/bootstrap";
+@import "base";
+@import "public";
+@import "fonts";
+@import "menu";
+@import "mega-menu";
+@import "login&sign";

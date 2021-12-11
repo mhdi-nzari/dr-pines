@@ -10,9 +10,11 @@
       display: flex;
       align-items: center;
 
-      img{@include media-xs{
-width: 80px
-      }}
+      img {
+        @include media-xs {
+          width: 80px;
+        }
+      }
     }
 
     // column second
@@ -95,10 +97,7 @@ width: 80px
             top: -5px;
             position: absolute;
             @include transition(all 600ms ease-in-out);
-            
           }
-
-         
         }
       }
 

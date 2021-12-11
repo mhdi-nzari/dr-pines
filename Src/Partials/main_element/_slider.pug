@@ -1,22 +1,54 @@
 section.slider
-     .container
-          .row
-               .col-xl-8.col-lg-8.col-md-8.col-12
-                    //- .owl-carousel.owl-theme.Intro-slider
-                    //-      .owl-item item1
-                    //-      .owl-item item2
-                    //-      .owl-item item3
-                    //-      .owl-item item4
+  .container-fluid
+    .row
+      .col-xl-8.col-lg-8.col-md-8.col-12
+        .swiper 
+          .swiper-wrapper 
+            .swiper-slide 
+               img(src="dist/Images/Slider_huge1x.png", alt="")
+            .swiper-slide 
+               img(src="dist/Images/Slider_huge1x.png", alt="")
+            .swiper-slide 
+               img(src="dist/Images/Slider_huge1x.png", alt="")
+            .swiper-slide 
+               img(src="dist/Images/Slider_huge1x.png", alt="")
+          .swiper-pagination          
+          .swiper-button-prev
+            img.left(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZIxDoIwFIZ/1ANwhCZK0niKTuKoXETc3OAK3sAjsOpUNm8AAyY9gifwSSNh9dEQwtBvaN7w9X1DC3g8k6DiJFX7JIcDC7ZJlLlElhzJvKqnWEs75iLaBqapNJiwAr9IXbpE2IE+spFhO15EJEvT1ObfHf4bdOh7cbYtfHDi+IMDPQFCjjY40P0kAcINY2OXq/hIanfIMDazXb5iWYR3e6T6UVzh8UzOF19KO0YDr1rcAAAAAElFTkSuQmCC", alt="")
+          .swiper-button-next
+            img.right(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVHgB7dSxDcIwEAXQbxiAFSwRRMQElK4wpckCMAIlHWGCiE2oqUIHE5AiSB4BOiqMoUCi4s4knV9hubDuF6dvIIr+1UUApbOlTIZje6mOv952wKSmWQ64Ag49NO01XOmZUxOzRtNaHm4WocNpO3Bi7k9b7ncbMBGXLK4IRAsQj60/pdKmABOpB7aurOynPkis5GAkbH0uQUQumi/V4R0C5JwQVpO/QpL0Rmky+6v4hAjc/f2EKGrdE7vrQOvOKnCuAAAAAElFTkSuQmCC", alt="")
 
-                    .swiper 
-                         .swiper-wrapper 
-                              .swiper-slide item1
-                              .swiper-slide item2
-                              .swiper-slide item3
-                              .swiper-slide item4
-                         .swiper-pagination
-                         .swiper-button-prev
-                         .swiper-button-next
-                         
-               .col-xl-4.col-lg-4.col-md-4.col-12
-               
+      .col-xl-4.col-lg-4.col-md-4.col-12
+        .banner-left
+          a(href="javascript:void(0)")
+            picture 
+              source(
+                media="(max-width:575.98px)",
+                srcset="dist/Images/Slider_small1x.png",
+                type="image/png"
+              )
+              source(
+                media="(max-width:767.98px)",
+                srcset="dist/Images/Slider_small2x.png",
+                type="image/png"
+              )
+              img.img-fluid(
+                src="dist/Images/Slider_small3x.png",
+                alt="slider-left-aside-huge-slider"
+              )
+          a(href="javascript:void(0)")
+            picture 
+              source(
+                media="(max-width:575.98px)",
+                srcset="dist/Images/Slider_small1x.png",
+                type="image/png"
+              )
+              source(
+                media="(max-width:767.98px)",
+                srcset="dist/Images/Slider_small2x.png",
+                type="image/png"
+              )
+              img.img-fluid(
+                src="dist/Images/Slider_small3x.png",
+                alt="slider-left-aside-huge-slider"
+              )

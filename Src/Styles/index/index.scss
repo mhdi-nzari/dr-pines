@@ -1,10 +1,28 @@
-
+@import "../base";
 
 .slider {
   margin: 100px 0px 100px 0px;
 }
 
+// Slider___Style
+
 .swiper {
-  width: 600px;
-  height: 300px;
+  @include border-radius();
+
+  .swiper-button-prev , .swiper-button-next{
+    z-index: 1;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    position: absolute;
+    .left,.Right {
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+    }
+  }
+ 
+  
 }

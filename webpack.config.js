@@ -9,19 +9,6 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-
-
-   
-  },
-
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()],
-  },
-  // Optimized Output Module
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()],
   },
 
   // exclude node_moudule
@@ -44,14 +31,33 @@ module.exports = {
           },
         ],
       },
+
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
       },
 
       {
         test: /\.s[ac]ss$/i,
-          use: ['style-loader', 'css-loader', 'sass-loader']          
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
@@ -68,8 +74,16 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|ttf|svg|eot)$/i,
-        use: ["url-loader"],
+        loader: "url-loader",
+        options: {
+          name: "[name].[contenthash].[ext]",
+        },
       },
+
+      {
+        test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        use: 'base64-inline-loader?limit=1000&name=[name].[ext]'
+     },
       // Exposes jQuery for use outside Webpack build
       {
         test: /[\/\\]node_modules[\/\\]bluebird[\/\\].+\.js$/,
@@ -84,16 +98,7 @@ module.exports = {
     ],
   },
   plugins: [
-
-
-    [
-      "postcss-preset-env",
-      {
-        // Options
-      },
-    ],
     // plugin for owl-carusel error
-
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -105,10 +110,10 @@ module.exports = {
       cleanStaleWebpackAssets: true,
     }),
 
-    new CopyPlugin({
-      patterns: [{ from: "Src/Images", to: "Images" }],
-    }),
+    // new CopyPlugin({
+    //   patterns: [{ from: "Src/Images", to: "Images" }],
+    // }),
 
     new TerserPlugin(),
-  ]
+  ],
 };

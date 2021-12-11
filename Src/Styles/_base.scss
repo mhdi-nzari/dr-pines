@@ -39,7 +39,7 @@ $shadow-base: 0 8px 24px rgba(0, 0, 0, 15%) !default;
 
 //***** border-radius
 $enable-rounded: true !default;
-$radius-base: 5px !default;
+$radius-base: 7px !default;
 @mixin border-radius($radius...) {
   @if length($radius) ==0 {
     -webkit-border-radius: $radius-base;

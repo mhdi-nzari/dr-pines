@@ -73,7 +73,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(woff|woff2|ttf|svg|eot)$/i,
+        test: /\.(woff|woff2|ttf|eot)$/i,
         loader: "url-loader",
         options: {
           name: "[name].[contenthash].[ext]",

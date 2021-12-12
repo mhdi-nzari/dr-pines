@@ -39,7 +39,7 @@ $shadow-base: 0 8px 24px rgba(0, 0, 0, 15%) !default;
 
 //***** border-radius
 $enable-rounded: true !default;
-$radius-base: 7px !default;
+$radius-base: 5px !default;
 @mixin border-radius($radius...) {
   @if length($radius) ==0 {
     -webkit-border-radius: $radius-base;
@@ -140,6 +140,8 @@ $transition-base: all 700s ease-in-out !default;
   line-height: $line-height;
   color: $color-btn;
   background-color: $background;
+  border: 1px solid $color-base;
+  margin: 0 auto;
   // Manually declare to provide an override to the browser default
   @if $enable-rounded {
     -webkit-border-radius: $border-radius;

@@ -10,6 +10,9 @@ import image9 from './Images/Slider_small2x.png';
 import image10 from './Images/Slider_small3x.png';
 import image11 from './Images/Category.png';
 import image12 from './Images/Category_arrow.png';
+import image13 from './Images/Union.svg';
+import image14 from './Images/(Traced).png';
+import image15 from './Images/(Education).png';
 
 
 

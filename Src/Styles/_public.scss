@@ -43,7 +43,7 @@ img, video {
   max-width: 100%;
   height: auto;
 }
-audio, canvas, embed, iframe, img, object, svg, video {
+audio, canvas, embed, iframe, img, object, svg, video  {
   display: inline-block;
   vertical-align: middle;
 }
@@ -109,7 +109,7 @@ h4,
 h5,
 h6,
 input,
-textarea {
+textarea  , a:hover {
   font-family: iranyekan !important;
   color: $text-primary;
   margin: 0;
@@ -118,6 +118,9 @@ textarea {
 
 a {
   text-decoration: none;
+  color: $text-primary;
+
+
 }
 h1,
 h2,

@@ -50,9 +50,8 @@ audio, canvas, embed, iframe, img, object, svg, video  {
 
 ol,
 ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 0rem;
+dl, figure {
+margin: 0;
 }
 
 a,a:hover{

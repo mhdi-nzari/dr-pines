@@ -19,6 +19,7 @@ import image15 from './Images/(Union).png';
 
 
 
+
 import $ from "./Scripts/jquery.min";
 window.jQuery = $;
 window.$ = $;

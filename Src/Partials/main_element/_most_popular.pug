@@ -1,0 +1,32 @@
+- var text = "محبوب ترین ها";
+- var img = "dist/Images/Award.png";
+- var see = "مشاهده همه";
+- var arrow_left = "dist/Images/Category_arrow.png";
+
+section.most--popular 
+     .container-fluid 
+          .row 
+               .col-12 
+                    include _headline.pug
+          .swiper#most--popular--slider
+               .swiper-wrapper 
+                    each value in ['بذرگوجه فرنگی' , 'بذرگوجه فرنگی' , 'بذرگوجه فرنگی' , 'بذرگوجه فرنگی' , 'بذر گوجه فرنگی']
+                         .swiper-slide
+                              figure.wrapper--card
+                                   a.wrapper--card__link(href="javascript:void(0)") 
+                                        img(src="", alt="")
+                                   figcaption.wrapper--card--caption 
+                                        a.wrapper--card--caption__link(href="javascript:void(0)")
+                                             p.wrapper--card--caption--link__title=value
+                                        .wrapper--card--caption--price 
+                                             p.wrapper--card--caption--price__title قیمت
+                                             .wrapper--card--caption--prices
+                                                  span.wrapper--card--caption--prices__title__sale 1،250،000 تومان
+                                                  span.wrapper--card--caption--prices__title__discount 1،450،000 
+                                        .wrapper--card--caption--button 
+                                             .btn.btn__product مشاهده محصول
+
+                                   
+
+
+                         

@@ -9,10 +9,13 @@ import image8 from './Images/Slider_small1x.png';
 import image9 from './Images/Slider_small2x.png';
 import image10 from './Images/Slider_small3x.png';
 import image11 from './Images/Category.png';
+import Award from './Images/Award.png';
 import image12 from './Images/Category_arrow.png';
 import image14 from './Images/(Traced).png';
 import image15 from './Images/(Union).png';
-
+import image16 from './Images/(Education).png';
+import image17 from './Images/(Seminar).png';
+import image_item from './Images/Image_item.png';
 
 
 

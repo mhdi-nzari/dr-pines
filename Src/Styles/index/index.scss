@@ -224,28 +224,106 @@
   }
 }
 .most--popular {
-
-  .swiper-wrapper{
+  .swiper-wrapper {
     margin: 20px 0px;
   }
   #most--popular--slider {
     margin: 50px 0;
+
+    .swiper-wrapper {
+      margin: 30px 0px;
+    }
     .swiper-slide {
       @include d-flex;
       justify-content: center;
-      .wrapper--card {
-        background-color: white;
-        @include box-shadow;
-        padding: 10px;
-        border: 1px solid white;
-        @include transition;
 
-        /* Frame */
-        &:hover {
-          border: 1px dashed $color-base;
-          wrapper--card--caption--link__title {
-            color: $color-base;
+      .wrapper--card {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid white;
+        @include border-radius;
+        @include box-shadow;
+        padding: 30px 15px;
+        @include flex-c-center;
+
+        &__link {
+          margin-bottom: 15px;
+        }
+
+        &--caption {
+          &__link {
+            &__title {
+              font-weight: 700;
+              font-size: 18px;
+              color: $text-primary;
+              @include linetext(1);
+              margin: 0 0 10px 0;
+            }
           }
+
+          &--price {
+            &__title {
+              font-size: 14px;
+              color: $text-default;
+              margin: 0 0 5px 0;
+            }
+
+            .wrapper--card--caption--prices {
+              &__title__sale {
+                font-weight: 800;
+                font-size: 15px;
+                color: inherit;
+                margin-left: 30px;
+              }
+
+              &__title__discount {
+                font-weight: 500;
+                font-size: 14px;
+                color: $text-default;
+                text-decoration: line-through;
+              }
+
+              color: $text-primary;
+            }
+          }
+        }
+
+        &--button{
+          display: flex;
+          position: absolute;
+          bottom: -22px;
+          transform: translateY(0px);
+
+          &__product {
+           
+            text-align: center;
+            font-weight: 600;
+            @include button-size(10px, 20px, 13px, 1.6, 5px, #fff, $color-base);
+            @include transition;
+
+
+            &::after {
+              content: "";
+              background-color: rgba(127, 191, 87, 0.5);
+              position: absolute;
+              bottom: 0px;
+              top: -5px;
+              left: 0px;
+              right: -4px;
+              width: 140px;
+              z-index: -1;
+              border-radius: 5px;
+              height: 53px;
+              opacity: 0;
+              @include transition;
+
+         
+            }
+
+           
+          }
+
+         
         }
       }
     }

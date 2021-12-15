@@ -79,10 +79,10 @@ const swiper_3 = new Swiper("#most--popular--slider", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  autoplay:true,
+  autoplay:false,
   // Enable lazy loading
   lazy: true,
-  slidesPerView: 4,
+  slidesPerView: 5,
   spaceBetween: 0,
   speed: 1500,
 
@@ -112,7 +112,7 @@ const swiper_3 = new Swiper("#most--popular--slider", {
     },
   
     940: {
-      slidesPerView: 4,
+      slidesPerView: 5,
       
     }
   }

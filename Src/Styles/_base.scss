@@ -1,5 +1,5 @@
 :root {
-  --data-color: #7fbf57;
+  --data-color: rgb(127, 191, 87);
   --shadow-btn: hsla(97, 45%, 55%, 50%);
 
   --text-primary: #404751;
@@ -11,6 +11,7 @@ $color-base: var(--data-color);
 $color-second: var(--text-primary);
 
 $text-primary: var(--text-primary);
+$text-default: var( --color-default);
 
 // $color-hover: var(--color3);
 // $color-base-hover: var(--color4);

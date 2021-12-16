@@ -16,6 +16,8 @@ import image15 from './Images/(Union).png';
 import image16 from './Images/(Education).png';
 import image17 from './Images/(Seminar).png';
 import image_item from './Images/Image_item.png';
+import Heart_disable from './Images/Heart_disable.png';
+import eye from './Images/Show.png';
 
 
 

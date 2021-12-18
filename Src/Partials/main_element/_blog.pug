@@ -1,0 +1,43 @@
+- var text = "وبلاگ";
+- var img = "dist/Images/Document-Justify-Center-.png";
+- var see = "مشاهده همه";
+- var arrow_left = "dist/Images/Category_arrow.png";
+.container-fluid 
+    .row 
+      .col-12 
+        include _headline.pug
+section.blog 
+  .container 
+    .row 
+      .col-12 
+        
+
+        #blog--slider.swiper 
+          .swiper-wrapper 
+            each val in ['/dist/Images/img-1.png' , '/dist/Images/img-2.png' , '/dist/Images/img-3.png']
+              .swiper-slide
+                figure.wrapper--blog
+                  a.wrappper--blog__link(href="javascript:void(0)")
+                    img.wrappper--blog__link__img.img-fluid(
+                      src=val,
+                      alt="image-item"
+                    ) 
+                  figcaption.wrapper--blog--detail 
+                    .wrapper--blog--detail--meta
+                      .wrapper--blog--detail--meta--time
+                        img.wrapper--blog--detail--meta--time__icon(src="/dist/Images/Pen.png", alt="")
+                        time.wrapper--blog--detail--meta--time__number(
+                          datetime="2021-10-27"
+                        ) 1400/06/21
+                      .wrapper--blog--detail--meta--author
+                        img.wrapper--blog--detail--meta--author__icon(src="/dist/Images/Profile Square.png", alt="")
+                        p.wrapper--blog--detail--meta--author__name علیرضا محمدی
+
+                    .wrapper--info--blog
+                      a.wrapper--info--blog--title(href="javascript:void(0)")
+                        h3.wrapper--info--blog--title__text بذرباشی در فصول مختلف سال
+                      p.wrapper--info--blog--discription لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+
+                    button.wrapper--info--blog--detail__button.text-center مشاهده مقاله
+
+          .swiper-paginations

@@ -1,0 +1,20 @@
+@import "./base";
+@import "./public";
+
+.wrapper--footer {
+  background-color: #404751;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0px;
+
+  &::after {
+    content: "";
+    background: url("/dist/Images/after.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 322px;
+    height: 322px;
+  }
+}

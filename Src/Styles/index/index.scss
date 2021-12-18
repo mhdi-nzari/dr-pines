@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-// Style__Headline
+// Style  >> Headline
 .headline {
   &__title-box {
     @include d-flex;
@@ -46,7 +46,8 @@
   }
 }
 
-// Slider___Style
+// Style  >> Slider main
+
 .slider {
   margin: 50px 0px 50px 0px;
 
@@ -85,7 +86,8 @@
   }
 }
 
-// banner__Left__Style__In __ection One
+// Style  >> banner__Left__Style__In __ection One
+
 .banner--left {
   a.banner--left--link {
     img {
@@ -95,10 +97,11 @@
   }
 }
 
-// Style__Category__Section
+// Style  >> Category__Section
 
 .category {
   // Style__Slider
+
   #category--slider {
     margin: 50px 0;
     .swiper-slide {
@@ -175,7 +178,7 @@
     }
   }
 
-  // style arrow left & right
+  // Style  >> arrow left & right
 
   .swiper-rtl .swiper-button-next {
     left: 29px;
@@ -223,16 +226,15 @@
     z-index: -1;
   }
 }
+// Style  >> Most_Popular_Section
+
 .most--popular {
   .swiper-wrapper {
-    margin: 20px 0px;
+    margin: 30px 0px;
   }
   #most--popular--slider {
     margin: 50px 0;
 
-    .swiper-wrapper {
-      margin: 30px 0px;
-    }
     .swiper-slide {
       @include d-flex;
       justify-content: center;
@@ -409,5 +411,295 @@
         }
       }
     }
+  }
+}
+
+// Style  >> Best_Seller_Section
+
+.best--seller {
+  .swiper-wrapper {
+    margin: 30px 0px;
+  }
+  #best--seller--slider {
+    margin: 50px 0;
+
+    .swiper-slide {
+      @include d-flex;
+      justify-content: center;
+
+      .wrapper--card {
+        position: relative;
+        background-color: #fff;
+        border: 2px dashed white;
+        // overflow: hidden;
+
+        @include border-radius;
+        @include box-shadow;
+        padding: 30px 15px;
+        @include flex-c-center;
+        @include transition(all 400ms ease-in-out);
+
+        &__link {
+          margin-bottom: 15px;
+        }
+
+        &--caption {
+          &__link {
+            &__title {
+              font-weight: 700;
+              font-size: 18px;
+              color: $text-primary;
+              @include linetext(1);
+              margin: 0 0 10px 0;
+            }
+          }
+
+          &--price {
+            &__title {
+              font-size: 14px;
+              color: $text-default;
+              margin: 0 0 0 0;
+            }
+
+            .wrapper--card--caption--prices {
+              &__title__sale {
+                font-weight: 800;
+                font-size: 15px;
+                color: inherit;
+                margin-left: 30px;
+              }
+
+              &__title__discount {
+                font-weight: 500;
+                font-size: 14px;
+                color: $text-default;
+                text-decoration: line-through;
+              }
+
+              color: $text-primary;
+            }
+          }
+        }
+
+        &--button {
+          display: flex;
+          position: absolute;
+          bottom: -22px;
+          transform: translateY(0px);
+          text-align: center;
+          font-weight: 600;
+          @include button-size(10px, 20px, 13px, 1.6, 5px, #fff, $color-base);
+          // @include transition(all 400ms ease);
+          z-index: 1;
+
+          &::after {
+            content: "";
+            background-color: rgba(127, 191, 87, 0.5);
+            position: absolute;
+            bottom: 0px;
+            top: -6px;
+            left: 0px;
+            right: -6px;
+            width: 142px;
+            z-index: -1;
+            border-radius: 5px;
+            height: 53px;
+            opacity: 0;
+            @include transition(all 500ms ease-in-out);
+          }
+
+          &:hover::after {
+            opacity: 1;
+          }
+        }
+
+        .discount__code {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+          background-color: $color-base;
+          padding: 3px 6px;
+          border-radius: 5px;
+          color: #fff;
+          text-align: center;
+          font-size: 12px;
+          z-index: 1;
+
+          &::after {
+            content: "";
+            background-color: rgba(127, 191, 87, 0.5);
+            position: absolute;
+            bottom: 0px;
+            top: -3px;
+            left: 0;
+            right: -4px;
+            width: 124%;
+            height: 124%;
+            z-index: -1;
+            border-radius: 5px;
+            opacity: 0;
+            @include transition(all 500ms ease-in-out);
+          }
+        }
+
+        .wrapper--detail-over {
+          // overflow: hidden;
+          // position: absolute;
+          // right: -20%;
+          // top: 10px;
+
+          overflow: hidden;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: fit-content;
+          height: fit-content;
+
+          .wrapper--detail {
+            @include d-flex;
+            transform: translateX(100%);
+            @include transition(transform 400ms ease-in-out);
+            flex-direction: column;
+
+            .wrapper--detail__inside {
+              background-color: white;
+              border-radius: 100%;
+              padding: 5px;
+              border: 1px solid $color-base;
+              @include transition(all 400ms ease-in-out);
+              &:hover {
+                background-color: $color-base;
+                .wrapper--detail__inside__img {
+                  filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+                    saturate(0%) hue-rotate(37deg) brightness(100%)
+                    contrast(103%);
+                }
+              }
+
+              &:nth-child(odd) {
+                margin-bottom: 5px;
+              }
+
+              &__img {
+                @include flex-r-center;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          border: 2px dashed $color-base;
+          .discount__code::after {
+            opacity: 1;
+          }
+
+          .wrapper--detail {
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Style  >> Blog
+
+.blog {
+position: relative;
+
+  #blog--slider {
+    margin: 70px 0;
+
+    .swiper-slide {
+      @include d-flex;
+      justify-content: center;
+
+      .wrapper--blog {
+        .wrappper--blog__link {
+          &__img {
+            @include border-radius(5px);
+          }
+        }
+        .wrapper--blog--detail {
+          margin: 13px;
+
+          &--meta {
+            @include flex__custome(row, space-between, center);
+            margin-bottom: 15px;
+            color: $text-default;
+
+            &--time,
+            &--author {
+              @include flex__custome(row, center, center);
+              color: #939393;
+              font-size: 14px;
+              font-weight: 400;
+
+              &__icon {
+                margin-left: 10px;
+              }
+            }
+          }
+
+          .wrapper--info--blog {
+            margin-bottom: 10px;
+            &--title {
+              &__text {
+                margin-bottom: 10px;
+                font-weight: 800;
+                font-size: 17px;
+                @include linetext(1);
+              }
+            }
+
+            &--discription {
+              font-size: 14px;
+              @include linetext(3);
+              line-height: 1.6;
+              text-align: right;
+              color: #858585;
+            }
+          }
+
+          .wrapper--info--blog--detail__button {
+            width: 100%;
+            font-size: 15px;
+            color: $color-base;
+            border: 1px dashed $color-base;
+            @include border-radius;
+            padding: 7px 20px;
+            @include transition(all 700ms ease-in-out);
+
+            &:hover {
+              border: 1px dashed $color-base;
+              border-color: white;
+              background-color: $color-base;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::before{
+    content: "";
+    background: url(/dist/Images/bill.png) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 186px;
+    height: 279px;
+
+  }
+  &::after{
+    content: "";
+    background: url(/dist/Images/hand.png) no-repeat center center;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 186px;
+    height: 279px;
+
   }
 }

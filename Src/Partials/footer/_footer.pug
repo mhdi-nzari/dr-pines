@@ -1,18 +1,89 @@
+
+
+
 footer.wrapper--footer 
      .container-fluid 
           .row 
+               // Detail & Info-Company
                .col-xl-3 
                     .wrapper--footer--info--company 
                          a.wrapper--footer--info--company__link(href="javascript:void(0)")   
                               img.wrapper--footer--info--company__img(src="/dist/Images/logo_en.png", alt="company-logo")
-                         p.wrapper--footer--info--company__discription لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                         p.wrapper--footer--info--company__discription لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.راحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
 
                          .wrapper--footer--info--company--social 
                               each img in ['/dist/Images/Website.png' , '/dist/Images/Instagram.png' , '/dist/Images/Instagram.png' , '/dist/Images/TV.png']
                                .social
-                                   img(src=img, alt="")
+                                   a.social__link(href="javascript:void(0)") 
+                                        img.social__link__icon(src=img, alt="social-icon")
+               // Website-Quick-Access-Link          
+               .col-xl-3 
+                    .wrapper--quick--access    
+                         h4.wrapper--quick--access__title دسترسی سریع
+                         .wrapper--quick--access--divider
+                         .wrapper--quick--access--links 
+                              ul.wrapper--quick--access--link
+                                   li
+                                        a(href="javascript:void(0)") خانه
+                                   li
+                                        a(href="javascript:void(0)") فروشگاه
+                                   li
+                                        a(href="javascript:void(0)") آزمایشگاه
+                                   li
+                                        a(href="javascript:void(0)")  وبلاگ
+                                   
+                              ul.wrapper--quick--access--link
+                                   li
+                                        a(href="javascript:void(0)") مشاوران
+                                   li
+                                        a(href="javascript:void(0)") سوالات متداول
+                                   li
+                                        a(href="javascript:void(0)")   مشتریان
+                                   li
+                                        a(href="javascript:void(0)") پنل مشاوران   
+                              ul.wrapper--quick--access--link
+                                   li
+                                        a(href="javascript:void(0)") مقالات
+                                   li
+                                        a(href="javascript:void(0)") درباره ما
+                                   li
+                                        a(href="javascript:void(0)")   افتخارات
+                                   li
+                                        a(href="javascript:void(0)") تماس با ما 
+
+               // Information-Contact-Company           
+               .col-xl-3 
+                    .wrapper--information    
+                         h4.wrapper--information__title اطلاعات تماس
+                         .wrapper--quick--access--divider
+
+                         .wrapper--information---details 
+                              ul.wrapper--information--details--access      
+                                   li.wrapper--information--details--access__item 
+                                        img.wrapper--information--details--access__item__ico(src="/dist/Images/Calling.png", alt="contact-us")
+                                        a.wrapper--information--details--access__item__text(href="tel:") 0913-521-1236 
+                                   li.wrapper--information--details--access__item 
+                                        img.wrapper--information--details--access__item__ico(src="/dist/Images/Calling.png", alt="contact-us")
+                                        a.wrapper--information--details--access__item__text(href="tel:") 031--5544-5563
+                                   li.wrapper--information--details--access__item 
+                                        img.wrapper--information--details--access__item__ico(src="/dist/Images/Calling.png", alt="contact-us")
+                                        a.wrapper--information--details--access__item__text(href="tel:") 031--5544-5563
+                                   li.wrapper--information--details--access__item 
+                                        img.wrapper--information--details--access__item__ico(src="/dist/Images/Message.png", alt="contact-us")
+                                        a.wrapper--information--details--access__item__text(href="mailto:") info@bargrizoon.ir
                          
-               .col-xl-3 
-               .col-xl-3 
-               .col-xl-3 
+                                   li.wrapper--information--details--access__item 
+                                        img.wrapper--information--details--access__item__ico(src="/dist/Images/Message.png", alt="contact-us")
+                                        a.wrapper--information--details--access__item__text(href="mailto:") ایران تهران خانه طباطبایی ها
+                         
+
+               .col-xl-3
+                    .wrapper--honors 
+                         h4.wrapper--honors__title اطلاعات تماس
+                         .wrapper--honors--divider
+                         .wrapper--honors__links
+                              a.wrapper--honors__links__item(href="javascript:void(0)") 
+                                   img.wrapper--honors__links__item__img.img-fluid(src="/dist/Images/enamad.png", alt="namad")
+                              a.wrapper--honors__links__item(href="javascript:void(0)") 
+                                   img.wrapper--honors__links__item__img.img-fluid(src="/dist/Images/enamad.png", alt="namad")
 

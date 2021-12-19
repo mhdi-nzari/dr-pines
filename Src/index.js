@@ -32,6 +32,13 @@ import after from "./Images/after.png";
 import social_1 from "./Images/TV.png";
 import social_2 from "./Images/Instagram.png";
 import social_3 from "./Images/Website.png";
+// ico info in footer
+import info_1 from "./Images/Message.png";
+import info_2 from "./Images/Calling.png";
+import info_3 from "./Images/Location.png";
+//enamad
+import enamd from "./Images/enamad.png";
+
 
 import image12 from "./Images/Category_arrow.png";
 import image14 from "./Images/(Traced).png";
@@ -41,6 +48,8 @@ import image17 from "./Images/(Seminar).png";
 import image_item from "./Images/Image_item.png";
 import Heart_disable from "./Images/Heart_disable.png";
 import eye from "./Images/Show.png";
+
+
 
 import $ from "./Scripts/jquery.min";
 window.jQuery = $;

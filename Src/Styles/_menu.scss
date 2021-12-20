@@ -1,8 +1,54 @@
 .fixed__nav {
   @include fixed__nav(80px, #fff, $transition-base);
 
+  @media screen and (min-width: 0px) and (max-width: 320px) {
+    .container-fluid {
+      padding: 20;
+    }
+  }
+
   .header {
     padding: 17px 0px;
+
+    //Style Burger >
+
+    .menu--burger {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      @include d-flex;
+      // &--items {
+      // width: 100%;
+      // height: 100%;
+      margin-top: 10px;
+      &--item:nth-child(1) {
+        position: absolute;
+
+        width: 24%;
+        height: 3px;
+        background-color: $text-primary;
+        @include border-radius(5px);
+      }
+
+      &--item:nth-child(2) {
+        position: absolute;
+
+        top: 8px;
+        width: 18%;
+        height: 3px;
+        background-color: $text-primary;
+        @include border-radius(5px);
+      }
+      &--item:nth-child(3) {
+        position: absolute;
+
+        top: 16px;
+        width: 12%;
+        height: 3px;
+        background-color: $text-primary;
+        @include border-radius(5px);
+      }
+    }
 
     // column primary
     //>>>>>> Logo
@@ -21,8 +67,15 @@
     .navbar {
       @include flex__custome(row, right, center);
       padding: 0;
+      height: 100%;
+      @media screen and (max-width: 768px) {
+        .slider .swiper .swiper-button-prev, .slider .swiper .swiper-button-next{
+          display: none;
+        }
+          }
 
       .parent__menu {
+        height: 100%;
         @include media-md {
           flex: row;
         }
@@ -37,7 +90,7 @@
           &::after {
             content: "";
             position: absolute;
-            right: 0;
+
             bottom: -8px;
             width: 0%;
             height: 3px;
@@ -69,6 +122,10 @@
       @include d-flex;
       justify-content: space-between;
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
 
       .item_detail {
         @include d-flex;

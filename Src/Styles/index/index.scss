@@ -196,8 +196,6 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    // transform: translate(3px , 25px);
-
     z-index: 1;
     background-color: #fff;
     width: 35px;
@@ -605,7 +603,7 @@
 // Style  >> Blog
 
 .blog {
-position: relative;
+  position: relative;
 
   #blog--slider {
     margin: 70px 0;
@@ -682,7 +680,7 @@ position: relative;
     }
   }
 
-  &::before{
+  &::before {
     content: "";
     background: url(/dist/Images/bill.png) no-repeat center center;
     position: absolute;
@@ -690,9 +688,8 @@ position: relative;
     top: -40px;
     width: 186px;
     height: 279px;
-
   }
-  &::after{
+  &::after {
     content: "";
     background: url(/dist/Images/hand.png) no-repeat center center;
     position: absolute;
@@ -700,6 +697,5 @@ position: relative;
     bottom: -40px;
     width: 186px;
     height: 279px;
-
   }
 }

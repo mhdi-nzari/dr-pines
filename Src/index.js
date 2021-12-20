@@ -1,3 +1,5 @@
+
+
 import image1 from "./Images/Buy 1.svg";
 import image2 from "./Images/Down 2.svg";
 import image3 from "./Images/logo_en.png";

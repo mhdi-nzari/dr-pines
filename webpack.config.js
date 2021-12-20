@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -31,6 +32,11 @@ module.exports = {
           },
         ],
       },
+
+      // {
+      //   test: /\.html?$/,
+      //   loader: "file-loader?name=[name].[ext]",
+      // },
 
       {
         test: /\.css$/i,
@@ -82,8 +88,8 @@ module.exports = {
 
       {
         test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        use: 'base64-inline-loader?limit=1000&name=[name].[ext]'
-     },
+        use: "base64-inline-loader?limit=1000&name=[name].[ext]",
+      },
       // Exposes jQuery for use outside Webpack build
       {
         test: /[\/\\]node_modules[\/\\]bluebird[\/\\].+\.js$/,
@@ -110,9 +116,12 @@ module.exports = {
       cleanStaleWebpackAssets: true,
     }),
 
-    // new CopyPlugin({
-    //   patterns: [{ from: "Src/Images", to: "Images" }],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        { from: "*.html", to: "./" },
+       
+      ],
+    }),
 
     new TerserPlugin(),
   ],

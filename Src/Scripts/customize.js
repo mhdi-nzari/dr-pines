@@ -26,10 +26,31 @@ const swiper_1 = new Swiper("#slider-section", {
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+
+   // Responsive breakpoints
+   breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      
+      
+    },
+  
+    940: {
+      slidesPerView: 1,
+      
+    }
+  }
 });
 
 const swiper_2 = new Swiper("#category--slider", {

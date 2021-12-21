@@ -1,5 +1,3 @@
-
-
 import image1 from "./Images/Buy 1.svg";
 import image2 from "./Images/Down 2.svg";
 import image3 from "./Images/logo_en.png";
@@ -17,6 +15,7 @@ import image11 from "./Images/Category.png";
 import Award from "./Images/Award.png";
 import heart from "./Images/Heart.png";
 import blog from "./Images/Document-Justify-Center-.png";
+import cote from "./Images/(cot).png";
 // image category
 
 // image blog-item
@@ -41,7 +40,6 @@ import info_3 from "./Images/Location.png";
 //enamad
 import enamd from "./Images/enamad.png";
 
-
 import image12 from "./Images/Category_arrow.png";
 import image14 from "./Images/(Traced).png";
 import image15 from "./Images/(Union).png";
@@ -51,7 +49,11 @@ import image_item from "./Images/Image_item.png";
 import Heart_disable from "./Images/Heart_disable.png";
 import eye from "./Images/Show.png";
 
-
+// icon menu mobile
+import profile from "./Images/user-Tag.png";
+import category_2 from "./Images/Category-1.png";
+import home from "./Images/Home.png";
+import buy_2 from "./Images/Buy-2.png";
 
 import $ from "./Scripts/jquery.min";
 window.jQuery = $;

@@ -14,10 +14,11 @@ const swiper_1 = new Swiper("#slider-section", {
   },
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
     clickable: true,
+
   },
 
   // Navigation arrows
@@ -48,6 +49,7 @@ const swiper_1 = new Swiper("#slider-section", {
   
     940: {
       slidesPerView: 1,
+
       
     }
   }
@@ -64,32 +66,43 @@ const swiper_2 = new Swiper("#category--slider", {
   spaceBetween: 0,
   speed: 1500,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 
+ // If we need pagination
+ pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+  clickable: true,
+
+},
 
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
+    0: {
+      slidesPerView: 0,
       
     },
-    // when window width is >= 480px
     480: {
       slidesPerView: 1,
       
     },
-    // when window width is >= 640px
-    640: {
+    // when window width is >= 768px
+    768: {
       slidesPerView: 2,
       
     },
+    // when window width is >= 968px
+    968: {
+      slidesPerView: 3,
+      
+    },
   
-    940: {
+    1024: {
       slidesPerView: 4,
       
     }
@@ -107,12 +120,15 @@ const swiper_3 = new Swiper("#most--popular--slider", {
   spaceBetween: 0,
   speed: 1500,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 
+
+   // If we need pagination
+ pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+  clickable: true,
+
+},
 
   // Responsive breakpoints
   breakpoints: {
@@ -150,11 +166,13 @@ const swiper_4 = new Swiper("#best--seller--slider", {
   spaceBetween: 0,
   speed: 1500,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+ // If we need pagination
+ pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+  clickable: true,
+
+},
 
 
   // Responsive breakpoints
@@ -193,12 +211,13 @@ const blog = new Swiper("#blog--slider", {
   spaceBetween: 25,
   speed: 1500,
 
-  // Pagination bullets
+  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true,
+  
   },
-
 
   // Responsive breakpoints
   breakpoints: {
@@ -213,12 +232,12 @@ const blog = new Swiper("#blog--slider", {
       
     },
     // when window width is >= 640px
-    640: {
+    768: {
       slidesPerView: 2,
       
     },
   
-    940: {
+   1200: {
       slidesPerView: 3,
       
     }

@@ -26,10 +26,49 @@ body {
   font-size: 1.4m;
 }
 
-// .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm{
-//   padding-right: 15px;
-//   padding-left: 15px;
-// }
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  body{
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  h5 {
+    font-size: 1.4wrem;
+  }
+    }
+
+
+   
 
 
 img {
@@ -39,22 +78,33 @@ img {
   border-style: none;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
-audio, canvas, embed, iframe, img, object, svg, video  {
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
   display: inline-block;
   vertical-align: middle;
 }
 
 ol,
 ul,
-dl, figure , p{
-margin: 0;
+dl,
+figure,
+p {
+  margin: 0;
 }
 
-a,a:hover{
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -92,12 +142,12 @@ input[type="search"]::-webkit-search-results-decoration {
   box-shadow: none;
 }
 
-input:focus ,.btn:focus, .btn.focus 
- {
+input:focus,
+.btn:focus,
+.btn.focus {
   outline: none;
   box-shadow: none;
 }
-
 
 //>>>>>>>> Typographi
 
@@ -108,37 +158,16 @@ h4,
 h5,
 h6,
 input,
-textarea  , a:hover {
+textarea,
+a:hover {
   font-family: iranyekan !important;
   color: $text-primary;
   margin: 0;
-
 }
 
 a {
   text-decoration: none;
   color: $text-primary;
+}
 
-}
-h1,
-h2,
-h3 {
-  font-weight: 700;
-}
-h1 {
-  font-size: 2.5rem;
-}
-h2 {
-  font-size: 2.2rem;
-}
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 1.8rem;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 3.5rem;
-  }
-}
+

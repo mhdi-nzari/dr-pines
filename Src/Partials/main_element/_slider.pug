@@ -7,11 +7,11 @@ section.slider
             .swiper-slide 
               img(src="dist/Images/Slider_huge1x.png", alt="")
             .swiper-slide 
-              img(src="dist/Images/Slider_huge1x.png", alt="")
+              img.right-img(src="dist/Images/Slider_huge1x.png", alt="")
             .swiper-slide 
-              img(src="dist/Images/Slider_huge1x.png", alt="")
+              img.right-img(src="dist/Images/Slider_huge1x.png", alt="")
             .swiper-slide 
-              img(src="dist/Images/Slider_huge1x.png", alt="")
+              img.right-img(src="dist/Images/Slider_huge1x.png", alt="")
           .swiper-pagination 
           .swiper-button-prev
             img.left(
@@ -27,7 +27,7 @@ section.slider
       .col-xl-4.col-lg-4.col-md-4.col-12
         aside.banner--left
           a.banner--left--link(href="javascript:void(0)")
-            picture 
+            picture.banner--left--link__pic
               source(
                 media="(max-width:575.98px)",
                 srcset="dist/Images/Slider_small1x.png",
@@ -38,12 +38,12 @@ section.slider
                 srcset="dist/Images/Slider_small2x.png",
                 type="image/png"
               )
-              img.img-fluid(
+              img#one.banner--left--link__pic__img.img-fluid(
                 src="dist/Images/Slider_small3x.png",
                 alt="slider-left-aside-huge-slider"
               )
           a.banner--left--link(href="javascript:void(0)")
-            picture 
+            picture.banner--left--link__pic 
               source(
                 media="(max-width:575.98px)",
                 srcset="dist/Images/Slider_small1x.png",
@@ -54,7 +54,7 @@ section.slider
                 srcset="dist/Images/Slider_small2x.png",
                 type="image/png"
               )
-              img.img-fluid(
+              img#two.banner--left--link__pic__img.img-fluid(
                 src="dist/Images/Slider_small3x.png",
                 alt="slider-left-aside-huge-slider"
               )

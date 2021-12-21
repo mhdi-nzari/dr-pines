@@ -1,7 +1,7 @@
 - var text = "دسته بندی";
 - var img = "dist/Images/Category.png";
-- var see = "";
-- var arrow_left = "";
+- var see = "مشاهده همه";
+- var arrow_left = "dist/Images/Category_arrow.png";
 
 section.category 
   .container-fluid 
@@ -52,7 +52,7 @@ section.category
             .swiper-slide
               figure.item__box
                 figcaption.item__box__caption
-                    .item__box__caption__icon--one
+                    .item__box__caption__icon--three
                          img(
                          src="/dist/Images/(Education).png",
                          alt="",
@@ -71,7 +71,7 @@ section.category
             .swiper-slide
               figure.item__box
                 figcaption.item__box__caption
-                    .item__box__caption__icon--one
+                    .item__box__caption__icon--four
                          img(
                          src="/dist/Images/(Seminar).png",
                          alt="",
@@ -87,32 +87,33 @@ section.category
                     path(fill-rule="evenodd", clip-rule="evenodd", d="M200.775 45C191.185 45 183.733 36.6274 179.994 27.4727C173.402 11.3275 157.978 0 140 0C122.022 0 106.598 11.3275 100.005 27.4727C96.2669 36.6274 88.8149 45 79.2248 45H17.3643C7.77428 45 0 53.0589 0 63V207C0 216.942 7.77429 225 17.3643 225H262.636C272.226 225 280 216.942 280 207V63C280 53.0589 272.226 45 262.636 45H200.775Z", fill="white")
                   g(mask="url(#mask0_565_428)")
                     path(d="M100.005 27.4728L99.0056 27.0341L100.005 27.4728ZM179.994 27.4728L178.995 27.9113L179.994 27.4728ZM140 1.125C157.526 1.125 172.567 12.1674 178.995 27.9113L180.994 27.0342C174.238 10.4876 158.428 -1.125 140 -1.125V1.125ZM101.005 27.9113C107.433 12.1674 122.474 1.125 140 1.125V-1.125C121.572 -1.125 105.762 10.4876 99.0056 27.0341L101.005 27.9113ZM17.3642 46.1251H79.2247V43.8751H17.3642V46.1251ZM1.08522 63.0001C1.08522 53.6801 8.3736 46.1251 17.3642 46.1251V43.8751C7.17485 43.8751 -1.08533 52.4376 -1.08533 63.0001H1.08522ZM1.08522 207V63.0001H-1.08533V207H1.08522ZM17.3642 223.875C8.37362 223.875 1.08522 216.319 1.08522 207H-1.08533C-1.08533 217.562 7.17486 226.125 17.3642 226.125V223.875ZM262.636 223.875H17.3642V226.125H262.636V223.875ZM278.915 207C278.915 216.319 271.626 223.875 262.636 223.875V226.125C272.825 226.125 281.085 217.562 281.085 207H278.915ZM278.915 63.0001V207H281.085V63.0001H278.915ZM262.636 46.1251C271.626 46.1251 278.915 53.6801 278.915 63.0001H281.085C281.085 52.4376 272.825 43.8751 262.636 43.8751V46.1251ZM200.775 46.1251H262.636V43.8751H200.775V46.1251ZM99.0056 27.0341C95.3335 36.0271 88.1632 43.8751 79.2247 43.8751V46.1251C89.4663 46.1251 97.2002 37.2278 101.005 27.9113L99.0056 27.0341ZM178.995 27.9113C182.8 37.2278 190.533 46.1251 200.775 46.1251V43.8751C191.837 43.8751 184.666 36.0271 180.994 27.0342L178.995 27.9113Z", fill="#EEEEEE")
-            //- .swiper-slide
-            //-   figure.item__box
-            //-     figcaption.item__box__caption
-            //-         .item__box__caption__icon--one
-            //-              img(
-            //-              src="/dist/Images/(Traced).png",
-            //-              alt="",
-            //-              width="fit-content"
-            //-              ) 
-            //-         a.item__box__caption_content(href="javascript:void(0)") 
-            //-              p.item__box__caption__content--text ارائه مشاوره آنلاین در زمینه ...
-            //-         .item__box__caption__servises
-            //-              button.btn.item__box__caption__servises__button مشاهده خدمات
+            .swiper-slide
+              figure.item__box
+                figcaption.item__box__caption
+                    .item__box__caption__icon--five
+                         img(
+                         src="/dist/Images/(cot).png",
+                         alt="",
+                         width="fit-content"
+                         ) 
+                    a.item__box__caption_content(href="javascript:void(0)") 
+                         p.item__box__caption__content--text عرضه کود عمومی به کشاورزان
+                    .item__box__caption__servises
+                         button.btn.item__box__caption__servises__button مشاهده خدمات
 
-            //-     svg.box(width="280", height="210", viewBox="0 0 280 210", fill="none", xmlns="http://www.w3.org/2000/svg.box")
-            //-       mask#mask0_557_423(style="mask-type:alpha", maskUnits="userSpaceOnUse", x="0", y="0", width="280", height="210")
-            //-         path(fill-rule="evenodd", clip-rule="evenodd", d="M200.775 42C191.185 42 183.733 34.1856 179.994 25.6412C173.402 10.5723 157.978 0 140 0C122.022 0 106.598 10.5723 100.005 25.6412C96.2669 34.1856 88.8149 42 79.2248 42H17.3643C7.77428 42 0 49.5216 0 58.8V193.2C0 202.479 7.77429 210 17.3643 210H262.636C272.226 210 280 202.479 280 193.2V58.8C280 49.5216 272.226 42 262.636 42H200.775Z", fill="white")
-            //-       g(mask="url(#mask0_557_423)")
-            //-         path(d="M100.005 25.6412L99.0057 25.2318L100.005 25.6412ZM179.994 25.6412L178.995 26.0505L179.994 25.6412ZM140 1.04995C157.526 1.04995 172.567 11.3562 178.995 26.0505L180.994 25.2319C174.238 9.78837 158.428 -1.05005 140 -1.05005V1.04995ZM101.005 26.0505C107.433 11.3562 122.474 1.04995 140 1.04995V-1.05005C121.572 -1.05005 105.762 9.78837 99.0057 25.2318L101.005 26.0505ZM17.3643 43.05H79.2248V40.95H17.3643V43.05ZM1.08528 58.8C1.08528 50.1014 8.37366 43.05 17.3643 43.05V40.95C7.17491 40.95 -1.08527 48.9417 -1.08527 58.8H1.08528ZM1.08528 193.2V58.8H-1.08527V193.2H1.08528ZM17.3643 208.95C8.37368 208.95 1.08528 201.898 1.08528 193.2H-1.08527C-1.08527 203.058 7.17492 211.05 17.3643 211.05V208.95ZM262.636 208.95H17.3643V211.05H262.636V208.95ZM278.915 193.2C278.915 201.898 271.626 208.95 262.636 208.95V211.05C272.825 211.05 281.085 203.058 281.085 193.2H278.915ZM278.915 58.8V193.2H281.085V58.8H278.915ZM262.636 43.05C271.626 43.05 278.915 50.1014 278.915 58.8H281.085C281.085 48.9417 272.825 40.95 262.636 40.95V43.05ZM200.775 43.05H262.636V40.95H200.775V43.05ZM99.0057 25.2318C95.3336 33.6252 88.1633 40.95 79.2248 40.95V43.05C89.4664 43.05 97.2003 34.7459 101.005 26.0505L99.0057 25.2318ZM178.995 26.0505C182.8 34.7459 190.533 43.05 200.775 43.05V40.95C191.837 40.95 184.666 33.6252 180.994 25.2319L178.995 26.0505Z", fill="#EEEEEE")
-          .swiper-button-prev
-            img.left(
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZIxDoIwFIZ/1ANwhCZK0niKTuKoXETc3OAK3sAjsOpUNm8AAyY9gifwSSNh9dEQwtBvaN7w9X1DC3g8k6DiJFX7JIcDC7ZJlLlElhzJvKqnWEs75iLaBqapNJiwAr9IXbpE2IE+spFhO15EJEvT1ObfHf4bdOh7cbYtfHDi+IMDPQFCjjY40P0kAcINY2OXq/hIanfIMDazXb5iWYR3e6T6UVzh8UzOF19KO0YDr1rcAAAAAElFTkSuQmCC",
-              alt="arrow-right"
-            )
-          .swiper-button-next
-            img.right(
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVHgB7dSxDcIwEAXQbxiAFSwRRMQElK4wpckCMAIlHWGCiE2oqUIHE5AiSB4BOiqMoUCi4s4knV9hubDuF6dvIIr+1UUApbOlTIZje6mOv952wKSmWQ64Ag49NO01XOmZUxOzRtNaHm4WocNpO3Bi7k9b7ncbMBGXLK4IRAsQj60/pdKmABOpB7aurOynPkis5GAkbH0uQUQumi/V4R0C5JwQVpO/QpL0Rmky+6v4hAjc/f2EKGrdE7vrQOvOKnCuAAAAAElFTkSuQmCC",
-              alt="arrow-left"
-            )
+                svg.box(width="280", height="225", viewBox="0 0 280 225", fill="none", xmlns="http://www.w3.org/2000/svg")
+                  mask#mask0_565_428(style="mask-type:alpha", maskUnits="userSpaceOnUse", x="0", y="0", width="280", height="225")
+                    path(fill-rule="evenodd", clip-rule="evenodd", d="M200.775 45C191.185 45 183.733 36.6274 179.994 27.4727C173.402 11.3275 157.978 0 140 0C122.022 0 106.598 11.3275 100.005 27.4727C96.2669 36.6274 88.8149 45 79.2248 45H17.3643C7.77428 45 0 53.0589 0 63V207C0 216.942 7.77429 225 17.3643 225H262.636C272.226 225 280 216.942 280 207V63C280 53.0589 272.226 45 262.636 45H200.775Z", fill="white")
+                  g(mask="url(#mask0_565_428)")
+                    path(d="M100.005 27.4728L99.0056 27.0341L100.005 27.4728ZM179.994 27.4728L178.995 27.9113L179.994 27.4728ZM140 1.125C157.526 1.125 172.567 12.1674 178.995 27.9113L180.994 27.0342C174.238 10.4876 158.428 -1.125 140 -1.125V1.125ZM101.005 27.9113C107.433 12.1674 122.474 1.125 140 1.125V-1.125C121.572 -1.125 105.762 10.4876 99.0056 27.0341L101.005 27.9113ZM17.3642 46.1251H79.2247V43.8751H17.3642V46.1251ZM1.08522 63.0001C1.08522 53.6801 8.3736 46.1251 17.3642 46.1251V43.8751C7.17485 43.8751 -1.08533 52.4376 -1.08533 63.0001H1.08522ZM1.08522 207V63.0001H-1.08533V207H1.08522ZM17.3642 223.875C8.37362 223.875 1.08522 216.319 1.08522 207H-1.08533C-1.08533 217.562 7.17486 226.125 17.3642 226.125V223.875ZM262.636 223.875H17.3642V226.125H262.636V223.875ZM278.915 207C278.915 216.319 271.626 223.875 262.636 223.875V226.125C272.825 226.125 281.085 217.562 281.085 207H278.915ZM278.915 63.0001V207H281.085V63.0001H278.915ZM262.636 46.1251C271.626 46.1251 278.915 53.6801 278.915 63.0001H281.085C281.085 52.4376 272.825 43.8751 262.636 43.8751V46.1251ZM200.775 46.1251H262.636V43.8751H200.775V46.1251ZM99.0056 27.0341C95.3335 36.0271 88.1632 43.8751 79.2247 43.8751V46.1251C89.4663 46.1251 97.2002 37.2278 101.005 27.9113L99.0056 27.0341ZM178.995 27.9113C182.8 37.2278 190.533 46.1251 200.775 46.1251V43.8751C191.837 43.8751 184.666 36.0271 180.994 27.0342L178.995 27.9113Z", fill="#EEEEEE")
+          .swiper-pagination
+          //- .swiper-button-prev
+          //-   img.left(
+          //-     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACvSURBVHgB7ZIxDoIwFIZ/1ANwhCZK0niKTuKoXETc3OAK3sAjsOpUNm8AAyY9gifwSSNh9dEQwtBvaN7w9X1DC3g8k6DiJFX7JIcDC7ZJlLlElhzJvKqnWEs75iLaBqapNJiwAr9IXbpE2IE+spFhO15EJEvT1ObfHf4bdOh7cbYtfHDi+IMDPQFCjjY40P0kAcINY2OXq/hIanfIMDazXb5iWYR3e6T6UVzh8UzOF19KO0YDr1rcAAAAAElFTkSuQmCC",
+          //-     alt="arrow-right"
+          //-   )
+          //- .swiper-button-next
+          //-   img.right(
+          //-     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVHgB7dSxDcIwEAXQbxiAFSwRRMQElK4wpckCMAIlHWGCiE2oqUIHE5AiSB4BOiqMoUCi4s4knV9hubDuF6dvIIr+1UUApbOlTIZje6mOv952wKSmWQ64Ag49NO01XOmZUxOzRtNaHm4WocNpO3Bi7k9b7ncbMBGXLK4IRAsQj60/pdKmABOpB7aurOynPkis5GAkbH0uQUQumi/V4R0C5JwQVpO/QpL0Rmky+6v4hAjc/f2EKGrdE7vrQOvOKnCuAAAAAElFTkSuQmCC",
+          //-     alt="arrow-left"
+          //-   )

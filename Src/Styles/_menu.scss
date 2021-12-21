@@ -1,14 +1,25 @@
 .fixed__nav {
   @include fixed__nav(80px, #fff, $transition-base);
 
-  @media screen and (min-width: 0px) and (max-width: 320px) {
-    .container-fluid {
-      padding: 20;
-    }
-  }
+  @media screen and (max-width: 768px) {
+   height: 65px;
+  
+      }
+      
+      @media screen and (min-width: 0px) and (max-width: 320px) {
+        .container-fluid {
+          padding: 20;
+        }
+      }
+      
+      .header {
+        padding: 17px 0px;
+        @media screen and (max-width: 768px) {
+          padding: 10px 0px;
+        
+            }
 
-  .header {
-    padding: 17px 0px;
+    
 
     //Style Burger >
 

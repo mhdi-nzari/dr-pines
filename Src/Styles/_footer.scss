@@ -17,7 +17,7 @@
     height: 322px;
     pointer-events: none;
   }
-  &::before{
+  &::before {
     content: "";
     background: url("/dist/Images/befor.png") no-repeat center center;
     background-size: cover;
@@ -79,10 +79,16 @@
     &__title {
       color: white;
       font-size: 20px;
+
+    
     }
 
     &--divider {
       margin-top: 15px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+
       margin-bottom: 0;
       width: 70px;
       position: relative;
@@ -161,6 +167,11 @@
     &__title {
       color: white;
       font-size: 20px;
+      @media screen and (max-width: 568px) {
+        margin-top: 20px;
+
+        
+          }
     }
 
     &--divider {
@@ -233,6 +244,12 @@
     &__title {
       color: white;
       font-size: 20px;
+
+      @media screen and (max-width: 568px) {
+        margin-top: 20px;
+
+        
+          }
     }
 
     &--divider {
@@ -241,6 +258,10 @@
       width: 70px;
       position: relative;
       height: 5px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+      }
 
       &::before {
         position: absolute;
@@ -267,7 +288,7 @@
     .wrapper--honors__links {
       @include flex__custome(row, space-evenly, center);
       margin-top: 30px;
-      &__item  {
+      &__item {
         display: inline-flex;
         background-color: white;
         padding: 10px 5px;

@@ -31,16 +31,32 @@
     <title>دکتر پاین مرجع تخصصی گیاه</title>
     <!-- Set Css Link-->
     <link rel="stylesheet" type="text/css" href="/Src/Styles/common&amp;related.css">
+    <!-- The initial part of the website-->
   </head>
   <body> 
     <!-- The Header website-->
+    <!-- The middle part of the website-->
     <main> 
       <!-- The middle part of the website-->
+      <div id="login_form"><a class="logo__link d-flex justify-content-center" href="javascript:void(0)"> <img class="logo__link__img" src="/Src/Images/logo_en.png" alt="website logo" width="" height=""></a>
+        <form class="login--page" action="javascript:void(0)" method="post">
+          <div class="login--page--title">
+            <h3 class="login--page--title__text">فرم ثبت نام کاربران</h3>
+            <p class="login--page--title__discription">کاربر گرامی لطفا اطلاعات خواسته شده را در فیلد های مربوطه پر نمائید. </p>
+          </div>
+          <div class="login--page--input">
+            <input class="login--page--input__number" id="number" type="text" name="number" minlength="1" maxlength="11">
+            <label class="login--page--input__lable" id="lable" for="number">شماره تلفن همراه</label>
+            <button class="login--page--button__send" type="submit">ثبت اطلاعات</button>
+          </div>
+          <div class="login--page--ifsignup"><span class="login--page--ifsignup__one">حساب کاربری دارید؟</span><a class="login--page--ifsignup__two" href="javascript:void(0)">ورود</a></div>
+        </form>
+      </div>
       <!--******** end of #main ********//-->
     </main>
     <!-- Attached links & Script Which must be loaded at the end-->
+    <!-- Attached links & Script Which must be loaded at the end-->
     <script src="/dist/bundle.js"> </script>
-    <!-- swiper_car-->
     <script src="/Src/Scripts/customize.js"> </script>
   </body>
 </html>

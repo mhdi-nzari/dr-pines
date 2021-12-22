@@ -26,6 +26,14 @@ body {
   font-size: 1.4m;
 }
 
+
+
+
+button{
+  border: none;
+  outline: none;
+
+}
 h1,
 h2,
 h3 {
@@ -99,7 +107,7 @@ ol,
 ul,
 dl,
 figure,
-p {
+p ,label{
   margin: 0;
 }
 
@@ -147,6 +155,12 @@ input:focus,
 .btn.focus {
   outline: none;
   box-shadow: none;
+
+}
+
+input:focus,
+input{
+  border: none;
 }
 
 //>>>>>>>> Typographi

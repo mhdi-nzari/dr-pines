@@ -8,13 +8,10 @@
 }
 
 $color-base: var(--data-color);
-$color-second: var(--text-primary);
-
 $text-primary: var(--text-primary);
+$color-second: var(--text-primary);
 $text-default: var( --color-default);
 
-// $color-hover: var(--color3);
-// $color-base-hover: var(--color4);
 
 //***** box-shadow
 $enable-shadows: false !default;

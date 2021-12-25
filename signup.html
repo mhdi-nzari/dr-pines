@@ -36,6 +36,7 @@
   <body> 
     <!-- The Header website-->
     <!-- The middle part of the website-->
+    <link rel="stylesheet" href="/Src/Styles/login&amp;sign.css">
     <main> 
       <!-- The middle part of the website-->
       <div id="login_form"><a class="logo__link d-flex justify-content-center" href="javascript:void(0)"> <img class="logo__link__img" src="/Src/Images/logo_en.png" alt="website logo" width="" height=""></a>
@@ -46,7 +47,7 @@
           </div>
           <div class="login--page--input">
             <input class="login--page--input__number" id="number" type="text" name="number" minlength="1" maxlength="11">
-            <label class="login--page--input__lable" id="lable" for="number">شماره تلفن همراه</label>
+            <label class="login--page--input__lable" id="lable" for="number">شماره تلفن همراه</label><img id="disable" src="/dist/Images/disable-incorrect.png" alt="disable_icon" width="fit-content"><img id="false" src="/dist/Images/false.png" alt=""><img id="true" src="/dist/Images/true.png" alt="">
             <button class="login--page--button__send" type="submit">ثبت اطلاعات</button>
           </div>
           <div class="login--page--ifsignup"><span class="login--page--ifsignup__one">حساب کاربری دارید؟</span><a class="login--page--ifsignup__two" href="javascript:void(0)">ورود</a></div>
@@ -57,6 +58,5 @@
     <!-- Attached links & Script Which must be loaded at the end-->
     <!-- Attached links & Script Which must be loaded at the end-->
     <script src="/dist/bundle.js"> </script>
-    <script src="/Src/Scripts/customize.js"> </script>
   </body>
 </html>

@@ -32,7 +32,7 @@ body {
     ///>> color & style
     @include border-radius(10px);
     background-color: #ffff;
-    padding:3rem 2rem;
+    padding: 3rem 2rem;
     @include box-shadow(2px 5px 20px rgba(0, 0, 0, 0.1));
     border-bottom: 5px solid $color-base;
     ///>>> size and position
@@ -96,19 +96,36 @@ body {
         background-color: white;
       }
 
-      ///>>> size and position
-      #number:focus + {
-        #lable {
-          transform: translateY(-25px);
-          position: absolute;
-          padding: 0 10px;
-          right: 15px;
-        }
-      }
-    }
+      #disable,
+      #true,
+      #false {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        width: fit-content;
+        opacity: 0;
+        @include transition(all 300ms ease-in-out);}
 
         ///>>> size and position
-      ///>>> typographi 
+        #number:focus + {
+          #lable {
+            transform: translateY(-25px);
+            position: absolute;
+            padding: 0 10px;
+            right: 15px;
+          }
+        }
+
+        #number:focus ~ #disable{
+          opacity: 1;
+        }
+
+        
+      }
+   
+
+    ///>>> size and position
+    ///>>> typographi
     &--button__send {
       background-color: $text-default;
       padding: 13px 20px;
@@ -118,26 +135,23 @@ body {
       @include border-radius(5px);
       @include transition(all 300ms ease-in-out);
 
-      &:hover{
+      &:hover {
         background-color: $color-base;
         color: #fff;
-
-
       }
     }
-    &--ifsignup{
-      &__one{
+    &--ifsignup {
+      &__one {
         color: $text-default;
         font-size: 14px;
         font-weight: 400;
         margin-left: 10px;
       }
 
-      &__two{
+      &__two {
         font-size: 14px;
         color: $color-base;
         font-weight: 800;
-
       }
     }
   }

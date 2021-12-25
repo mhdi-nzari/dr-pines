@@ -4,6 +4,7 @@ block headstyle
   // The initial part of the website
 block header
   // The middle part of the website
+  link(rel="stylesheet", href="/Src/Styles/login&sign.css")
 block content
   - let title = "فرم ثبت نام کاربران";
   - let discription = "کاربر گرامی لطفا اطلاعات خواسته شده را در فیلد های مربوطه پر نمائید. ";
@@ -27,9 +28,11 @@ block content
           type="text",
           name="number",
           minlength="1",
-          maxlength="11"
-        )
+          maxlength="11")
         label#lable.login--page--input__lable(for="number") شماره تلفن همراه
+        img#disable(src="/dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
+        img#false(src="/dist/Images/false.png", alt="")
+        img#true(src="/dist/Images/true.png", alt="")
 
         button.login--page--button__send(type="submit") ثبت اطلاعات
 

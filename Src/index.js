@@ -55,6 +55,14 @@ import category_2 from "./Images/Category-1.png";
 import home from "./Images/Home.png";
 import buy_2 from "./Images/Buy-2.png";
 
+// login icon
+
+//input 
+import disable_correct from "./Images/disable-incorrect.png";
+import trues from "./Images/true.png";
+import falses from "./Images/false.png";
+
+
 import $ from "./Scripts/jquery.min";
 window.jQuery = $;
 window.$ = $;

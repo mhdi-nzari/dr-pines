@@ -37,12 +37,13 @@ body {
     border-bottom: 5px solid $color-base;
     ///>>> size and position
 
-    & > * {
-      ///>>> size and position
-      margin-bottom: 80px;
-    }
+    // & > * {
+    //   ///>>> size and position
+    //   margin-bottom: 80px;
+    // }
 
     &--title {
+      margin-bottom: 80px;
       ///>>> typographi
       text-align: center;
       &__text {
@@ -67,28 +68,55 @@ body {
 
       ///>>> size and position
 
-      & > :first-child {
-        margin-bottom: 20px;
-      }
+      // & > :first-child {
+      //   margin-bottom: 20px;
+      // }
 
+      //>>> input__number__default
       &__number {
         ///>> color & style
         border: 1px solid $text-default;
-        padding: 12px 23px;
+        padding: 12px 50px;
         border-radius: 5px;
         direction: ltr;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 500;
 
         ///>>> size and position
       }
 
+      .input--group {
+        direction: ltr;
+        position: absolute;
+        left: 70px;
+        top: 0px;
+      @include flex__custome(row,center,center);
+        height: 100%;
+    
+
+        #digit-3 , #digit-6 {
+margin-right: 7px;
+        }
+        input {
+          width: 15px;
+          height: initial;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+
+          
+
+          
+        }
+      }
+      ///>>> lable__input
       &__lable {
         ///>>> size and position
         ///>>> typographi
         position: absolute;
         // pointer-events: none;
         right: 24px;
-        top: 16px;
+        top: 13px;
         padding: 0 0 0 10px;
         @include transition(all 300ms ease-in-out);
         font-size: 13px;
@@ -104,43 +132,40 @@ body {
         right: 24px;
         width: fit-content;
         opacity: 0;
-        @include transition(all 300ms ease-in-out);}
-
-        ///>>> size and position
-        #number:focus + {
-          #lable {
-            transform: translateY(-25px);
-            position: absolute;
-            padding: 0 10px;
-            right: 15px;
-          }
-        }
-
-        #number:focus ~ #disable{
-          opacity: 1;
-        }
-
-        
+        @include transition(all 300ms ease-in-out);
       }
-   
 
-    ///>>> size and position
-    ///>>> typographi
-    &--button__send {
-      background-color: $text-default;
-      padding: 13px 20px;
-      font-size: 16px;
-      color: $text-primary;
-      text-align: center;
-      @include border-radius(5px);
-      @include transition(all 300ms ease-in-out);
+      ///>>> size and position
+      #number:focus + {
+        #lable {
+          transform: translateY(-22px);
+          position: absolute;
+          padding: 0 10px;
+          right: 15px;
+          font-weight: 700;
+        }
+      }
 
-      &:hover {
-        background-color: $color-base;
-        color: #fff;
+      #number:focus ~ #disable {
+        opacity: 1;
+      }
+
+      &__areacode {
+        font-weight: 700;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+        color: $text-primary;
+        width: 15%;
+        height: 100%;
+      @include flex__custome(row,center,center);
+
       }
     }
+
+   
     &--ifsignup {
+      margin: 80px 0px;
       &__one {
         color: $text-default;
         font-size: 14px;
@@ -152,6 +177,27 @@ body {
         font-size: 14px;
         color: $color-base;
         font-weight: 800;
+      }
+    }
+
+
+     ///>>> size and position
+    ///>>> typographi
+    .login--page--button__send {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      background-color: $text-default;
+      padding: 13px 20px;
+      font-size: 16px;
+      color: $text-primary;
+      text-align: center;
+      @include border-radius(5px);
+      @include transition(all 300ms ease-in-out);
+
+      &:hover {
+        background-color: $color-base;
+        color: #fff;
       }
     }
   }

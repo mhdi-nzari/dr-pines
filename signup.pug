@@ -18,27 +18,39 @@ block content
         width="",
         height=""
       )
-    form.login--page(action="javascript:void(0)", method="post")
+    .digit-group.login--page(action="javascript:void(0)", method="post")
       .login--page--title
         h3.login--page--title__text= title
         p.login--page--title__discription= discription
 
       .login--page--input
-        input.login--page--input__number#number(
-          type="text",
-          name="number",
-          minlength="1",
-          maxlength="11")
+        input.login--page--input__number#number(type="text"  readonly="readonly")
         label#lable.login--page--input__lable(for="number") شماره تلفن همراه
+        form(action="javascript:void(0)", method="post").input--group
+            input#digit-1(type="text", name="digit-1", data-next="digit-2"  placeholder="_" maxlength='1') 
+            input#digit-2(type="text", name="digit-2", data-previous="digit-1" ,  data-next="digit-3", placeholder="_" maxlength='1') 
+            input#digit-3(type="text", name="digit-3", data-previous="digit-2" ,  data-next="digit-4",  placeholder="_" maxlength='1')
+            input#digit-4(type="text", name="digit-4", data-previous="digit-3" ,  data-next="digit-5",  placeholder="_" maxlength='1')
+            input#digit-5(type="text", name="digit-5", data-previous="digit-4" ,  data-next="digit-6",  placeholder="_" maxlength='1')
+            input#digit-6(type="text", name="digit-6", data-previous="digit-5" ,  data-next="digit-7"   placeholder="_" maxlength='1')
+            input#digit-7(type="text", name="digit-7", data-previous="digit-6" ,  data-next="digit-8"   placeholder="_" maxlength='1')
+            input#digit-8(type="text", name="digit-8", data-previous="digit-7" ,  data-next="digit-9"   placeholder="_" maxlength='1')
+            input#digit-9(type="text", name="digit-9", data-previous="digit-8" ,  data-next="digit-10"   placeholder="_" maxlength='1')
+            input#digit-10(type="text", name="digit-10", data-previous="digit-9" ,placeholder="_" maxlength='1')
+        
+
+
+
+        span#lable.login--page--input__areacode 98+
         img#disable(src="/dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
         img#false(src="/dist/Images/false.png", alt="")
         img#true(src="/dist/Images/true.png", alt="")
 
-        button.login--page--button__send(type="submit") ثبت اطلاعات
+      a(href="signin.html").login--page--button__send ثبت نام
 
       .login--page--ifsignup
         span.login--page--ifsignup__one= ifsignup__one
-        a(href="javascript:void(0)").login--page--ifsignup__two= ifsignup__two
+        a(href="signin.html").login--page--ifsignup__two= ifsignup__two
 
 
 
@@ -46,3 +58,4 @@ block content
 block footer
   // Attached links & Script Which must be loaded at the end
 block script
+  script(src="/Src/Scripts/login.js") 

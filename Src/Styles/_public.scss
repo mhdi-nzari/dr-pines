@@ -137,11 +137,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9e9e9e;
+  background: $color-base;
+  @include border-radius(5px);
 }
 
 ::-webkit-scrollbar-track {
   background: #dadada;
+  @include border-radius(5px);
+
 }
 
 .form-control:focus {

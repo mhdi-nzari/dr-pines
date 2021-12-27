@@ -19,9 +19,31 @@ header.fixed__nav
         .col-xl-8.col-md-4.col-3.d-none.d-xl-block.column.flex--r--c
           nav.navbar.d-none.d-lg-block
             ul.parent__menu.d_flex 
-              each val, index in ['صفحه اصلی', 'محصولات', 'مشتریان' , 'مشاوران' , 'سوالات متداول','مقالات','درباره ما' , 'تماس با ما ']
-                li.link
-                  a.parent__menu__item(href="#")= val
+
+                li.link.dropdown
+                  a.parent__menu__item(href="#") صفحه اصلی
+                  
+                li.link.dropdown#product-dropdown
+                  a.parent__menu__item.nav-link.dropdown-toggle#navbarDropdownMenuLink(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") محصولات
+                  .dropdown-menu.product-dropdown
+                li.link.dropdown
+                  a.parent__menu__item(href="#") مشتریان
+                 
+                li.link.dropdown
+                  a.parent__menu__item(href="#") مشاوران
+                  
+                li.link.dropdown
+                  a.parent__menu__item(href="#") سوالات متداول
+                  
+                li.link.dropdown
+                  a.parent__menu__item(href="#") مقالات
+                  
+                li.link.dropdown
+                  a.parent__menu__item(href="#") درباره ما
+                  
+                li.link.dropdown
+                  a.parent__menu__item(href="#") تماس با ما
+                  
 
         .col-xl-3.col-lg-3.col-md-4.col-sm-3.d-none.d-sm-flex.flex--r--c.column
           include ./_accessible_menu

@@ -13,6 +13,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
   }
 }
 
@@ -35,6 +36,10 @@ body {
     padding: 3rem 2rem;
     @include box-shadow(2px 5px 20px rgba(0, 0, 0, 0.1));
     border-bottom: 5px solid $color-base;
+
+    @media screen and (max-width: 768px) {
+      margin: 20px;
+         }
     ///>>> size and position
 
     // & > * {
@@ -44,6 +49,11 @@ body {
 
     &--title {
       margin-bottom: 80px;
+
+      @media screen and (max-width: 768px) {
+        margin: 30px 0px;
+       
+           }
       ///>>> typographi
       text-align: center;
       &__text {
@@ -51,6 +61,12 @@ body {
         font-weight: 800;
         font-size: 23px;
         margin-bottom: 15px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 19px;
+
+         
+             }
       }
       &__discription {
         ///>>> typographi and  color
@@ -59,6 +75,12 @@ body {
         font-size: 14px;
         text-align: center;
       }
+
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+
+       
+           }
     }
 
     &--input {
@@ -92,7 +114,7 @@ body {
         top: 0px;
       @include flex__custome(row,center,center);
         height: 100%;
-    
+   
 
         #digit-3 , #digit-6 {
 margin-right: 7px;
@@ -104,7 +126,18 @@ margin-right: 7px;
           font-weight: 700;
           text-align: center;
 
-          
+          &::placeholder {
+            color: $text-default;
+            font-size: 1.5em;
+            @include transition(color 400ms ease-in-out);
+            
+          }
+          &:focus{
+            &::placeholder{
+              color: $text-primary;
+
+            }
+          }
 
           
         }
@@ -116,12 +149,17 @@ margin-right: 7px;
         position: absolute;
         // pointer-events: none;
         right: 24px;
-        top: 13px;
+        top: 15px;
         padding: 0 0 0 10px;
         @include transition(all 300ms ease-in-out);
         font-size: 13px;
         color: $text-primary;
         background-color: white;
+
+        @media screen and (max-width: 768px) {
+        display: none;
+       
+            }
       }
 
       #disable,
@@ -133,6 +171,10 @@ margin-right: 7px;
         width: fit-content;
         opacity: 0;
         @include transition(all 300ms ease-in-out);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+              }
       }
 
       ///>>> size and position
@@ -161,16 +203,65 @@ margin-right: 7px;
       @include flex__custome(row,center,center);
 
       }
+
+&__text{
+  font-size: 13px;
+  color: $text-primary;
+  font-weight: 600;
+}
+      ////>>>  Style__Confirm__Page
+
+      #digit-group {
+        direction: ltr;
+      @include flex__custome(row,center,center);
+        height: 100%;
+        margin: 25px 0px 25px 0px;
+        input {
+          width: 45px;
+          height: 45px;
+          margin: 0px 15px;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+          border: 1px solid $color-base;
+          @include border-radius(5px);
+
+          &::placeholder {
+            color: $text-default;
+            font-size: 1.5em;
+            @include transition(color 400ms ease-in-out);
+            
+          }
+          &:focus{
+            &::placeholder{
+              color: $text-primary;
+
+            }
+          }
+        }
+      
+        .splitter {
+          padding: 0 5px;
+          color: white;
+          font-size: 24px;
+        }
+      }
     }
 
    
     &--ifsignup {
       margin: 80px 0px;
+
+     @media screen and (max-width: 768px) {
+      margin: 30px 0px;
+     
+         }
       &__one {
         color: $text-default;
         font-size: 14px;
         font-weight: 400;
         margin-left: 10px;
+
       }
 
       &__two {

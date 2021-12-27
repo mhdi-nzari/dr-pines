@@ -1,0 +1,55 @@
+extends src/Partials/_layout
+
+block headstyle
+  // The initial part of the website
+block header
+  // The middle part of the website
+  link(rel="stylesheet", href="/Src/Styles/login&sign.css")
+block content
+  - let title = "تائید شماره موبایل";
+  - let discription = "برای دسترسی به حساب کاربری با شماره موبایل وارد شوید ";
+  - let ifsignup__one = "زمان باقیمانده";
+  - let ifsignup__two = "00:38";
+  #login_form
+    a.logo__link.d-flex.justify-content-center(href="javascript:void(0)") 
+      img.logo__link__img(
+        src="/Src/Images/logo_en.png",
+        alt="website logo",
+        width="",
+        height=""
+      )
+    .digit-group.login--page(action="javascript:void(0)", method="post")
+      .login--page--title
+        h3.login--page--title__text= title
+        p.login--page--title__discription= discription
+
+      .login--page--input
+        label#lable.login--page--input__text(for="number") کد پیامک شده
+        form#digit-group(method="get", data-group-name="digits", data-autosubmit="false", autocomplete="off")
+               input#digit-1(type="text", name="digit-1", data-next="digit-2"  placeholder="_" maxlength='1') 
+               input#digit-2(type="text", name="digit-2", data-previous="digit-1" ,  data-next="digit-3", placeholder="_" maxlength='1') 
+               input#digit-3(type="text", name="digit-3", data-previous="digit-2" ,  data-next="digit-4",  placeholder="_" maxlength='1')
+               input#digit-4(type="text", name="digit-4", data-previous="digit-3" ,  data-next="digit-5",  placeholder="_" maxlength='1')
+               input#digit-5(type="text", name="digit-5", data-previous="digit-4" ,  data-next="digit-6",  placeholder="_" maxlength='1') 
+
+        
+
+
+
+        img#disable(src="/dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
+        img#false(src="/dist/Images/false.png", alt="")
+        img#true(src="/dist/Images/true.png", alt="")
+
+      a(href="javascript:void(0)").login--page--button__send تائید  
+
+      .login--page--ifsignup
+        span.login--page--ifsignup__one= ifsignup__one
+        a(href="signup.html").login--page--ifsignup__two= ifsignup__two
+
+
+
+
+block footer
+  // Attached links & Script Which must be loaded at the end
+block script
+  script(src="/Src/Scripts/login.js") 

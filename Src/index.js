@@ -64,5 +64,6 @@ import falses from "./Images/false.png";
 
 
 import $ from "./Scripts/jquery.min";
+import bootstrap from "./Scripts/bootstrap.bundle.min";
 window.jQuery = $;
 window.$ = $;

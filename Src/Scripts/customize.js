@@ -219,3 +219,14 @@ const blog = new Swiper("#blog--slider", {
 // }else{
 // alert('no')
 // }
+
+const price = 8000;
+switch (price > 5000) {
+  case  5000:
+    console.log("hello")
+    
+    break;
+
+  default: console.log('not a number');
+    break;
+}

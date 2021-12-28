@@ -118,8 +118,30 @@ module.exports = {
 
     new CopyPlugin({
       patterns: [
-        { from: "*.html", to: "./" },
-       
+        { from: "*.html", to: "" },
+        {
+          from: "Src/Styles/index/*.css",
+          to: "Styles/index/[name].[ext]",
+        },
+        {
+          from: "Src/Styles/index/*.map",
+          to: "Styles/index/[name].[ext]",
+        },
+        {
+          from: "Src/Styles/*.css",
+          to: "Styles/[name].[ext]",
+        },
+        {
+          from: "Src/Styles/*.map",
+          to: "Styles/[name].[ext]",
+        },
+        {
+          from: "Src/Scripts/*.js",
+          to: "Scripts/[name].[ext]",
+        },
+
+      
+
       ],
     }),
 

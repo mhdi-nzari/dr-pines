@@ -91,6 +91,19 @@ span.swiper-pagination {
         height: 27px;
       }
     }
+
+    .right-img {
+      @media (min-width: 576px) {
+        min-height: 31%;
+      }
+
+      @media (min-width: 768px) {
+        min-height: 38%;
+      }
+      @media (min-width: 992px) {
+        min-height: 45%;
+      }
+    }
   }
 }
 
@@ -723,7 +736,7 @@ span.swiper-pagination {
 
   &::before {
     content: "";
-    background: url(/dist/Images/bill.png) no-repeat center center;
+    background: url("../../../dist/Images/bill.png") no-repeat center center;
     position: absolute;
     left: 0;
     top: -40px;
@@ -732,7 +745,7 @@ span.swiper-pagination {
   }
   &::after {
     content: "";
-    background: url(/dist/Images/hand.png) no-repeat center center;
+    background: url("../../../dist/Images/hand.png") no-repeat center center;
     position: absolute;
     right: 0;
     bottom: -40px;
@@ -741,7 +754,8 @@ span.swiper-pagination {
   }
 
   @media screen and (max-width: 1024px) {
-    &::after , &::before {
+    &::after,
+    &::before {
       display: none;
     }
   }

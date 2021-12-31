@@ -4,7 +4,7 @@ html(lang="fa", dir="rtl")
     // Meta Name For Seo & Optimize Website
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
     meta(name="author", content="")
@@ -23,24 +23,37 @@ html(lang="fa", dir="rtl")
     // Meta Name For Seo & Optimize Website
 
     //Favicon Website
-    link(rel="shortcut icon", href="#", type="image/x-icon")
-    link(rel="apple-touch-icon", href=";", sizes="180x180")
-    link(rel="icon",href="",type="image/png",sizes="16x16")
-    link(rel="icon",href="",type="image/png",sizes="32x32")
-    link(rel="icon",href="",type="image/png",sizes="64x64")
-    link(rel="icon",href="",type="image/png",sizes="180x180")
+    link(rel="shortcut icon", href="../../dist/Images/Images/favicon.ico", type="image/x-icon")
+    link(rel="apple-touch-icon", sizes="57x57", href="../../dist/Images/apple-icon-57x57.png")
+    link(rel="apple-touch-icon", sizes="60x60", href="../../dist/Images/apple-icon-60x60.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="../../dist/Images/apple-icon-72x72.png")
+    link(rel="apple-touch-icon", sizes="76x76", href="../../dist/Images/apple-icon-76x76.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="../../dist/Images/apple-icon-114x114.png")
+    link(rel="apple-touch-icon", sizes="120x120", href="../../dist/Images/apple-icon-120x120.png")
+    link(rel="apple-touch-icon", sizes="144x144", href="../../dist/Images/apple-icon-144x144.png")
+    link(rel="apple-touch-icon", sizes="152x152", href="../../dist/Images/apple-icon-152x152.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="../../dist/Images/apple-icon-180x180.png")
+    link(rel="icon", type="image/png", sizes="192x192", href="../../dist/Images/android-icon-192x192.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="../../dist/Images/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="96x96", href="../../dist/Images/favicon-96x96.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="../../dist/Images/favicon-16x16.png")
+    link(rel="manifest", href="/manifest.json")
+    meta(name="dr-pine", content="#ffffff")
+    meta(name="dr-pine", content="../../dist/Images/ms-icon-144x144.png")
+    meta(name="theme-color", content="#ffffff")
 
     // Title-Bar & Attached links
     title دکتر پاین مرجع تخصصی گیاه
 
     // Set Css Link
-    link(rel="stylesheet" ,type="text/css", href="/Src/Styles/common&related.css")
+    link(rel="stylesheet" ,type="text/css", href="dist/Styles/common&related.css")
 
     block headstyle
 
   body 
     // The Header website
     block header
+    
     main 
       // The middle part of the website
       block content
@@ -51,6 +64,6 @@ html(lang="fa", dir="rtl")
 
     // Attached links & Script Which must be loaded at the end
 
-    script(src="/dist/bundle.js") 
+    script(src="dist/bundle.js") 
     block script
       // swiper_car

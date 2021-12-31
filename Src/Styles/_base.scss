@@ -1,17 +1,25 @@
 :root {
   --data-color: rgb(127, 191, 87);
   --shadow-btn: hsla(97, 45%, 55%, 50%);
+  --backgorund-item: #e8eef2;
+
 
   --text-primary: #404751;
   --color-default: #e1e1e1;
+  --color-disable: #a6a6a6;
   --bg-color: #f9f9f9;
+  --bg-color2: #f3f3f3;
+  --warning: #dc5151;
 }
 
 $color-base: var(--data-color);
-$text-primary: var(--text-primary);
 $color-second: var(--text-primary);
-$text-default: var( --color-default);
-
+$text-primary: var(--text-primary);
+$color-warning: var(--warning);
+$text-default: var(--color-default);
+$background-item: var(--backgorund-item);
+$bg-color-2: var(--bg-color2);
+$color-disable: var(--color-disable);
 
 //***** box-shadow
 $enable-shadows: false !default;

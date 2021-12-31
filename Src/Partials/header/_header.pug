@@ -10,7 +10,7 @@ header.fixed__nav
         .col-xl-1.col-lg-1.col-md-6.col-sm-6.col-6.flex--r--c.column
           a.img-logo.img-fluid(href="/index.html")
             img(
-              src="/Src/Images/logo_en.png",
+              src="dist/Images/logo_en.png",
               alt="website logo",
               width="",
               height=""
@@ -19,31 +19,34 @@ header.fixed__nav
         .col-xl-8.col-md-4.col-3.d-none.d-xl-block.column.flex--r--c
           nav.navbar.d-none.d-lg-block
             ul.parent__menu.d_flex 
+              li.link.dropdown
+                a.parent__menu__item(href="#") صفحه اصلی
 
-                li.link.dropdown
-                  a.parent__menu__item(href="#") صفحه اصلی
-                  
-                li.link.dropdown#product-dropdown
-                  a.parent__menu__item.nav-link.dropdown-toggle#navbarDropdownMenuLink(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") محصولات
-                  .dropdown-menu.product-dropdown
-                li.link.dropdown
-                  a.parent__menu__item(href="#") مشتریان
-                 
-                li.link.dropdown
-                  a.parent__menu__item(href="#") مشاوران
-                  
-                li.link.dropdown
-                  a.parent__menu__item(href="#") سوالات متداول
-                  
-                li.link.dropdown
-                  a.parent__menu__item(href="#") مقالات
-                  
-                li.link.dropdown
-                  a.parent__menu__item(href="#") درباره ما
-                  
-                li.link.dropdown
-                  a.parent__menu__item(href="#") تماس با ما
-                  
+              li#product-dropdown.link.dropdown
+                a#navbarDropdownMenuLink.parent__menu__item.nav-link.dropdown-toggle(
+                  href="#",
+                  data-toggle="dropdown",
+                  aria-haspopup="true",
+                  aria-expanded="false"
+                ) محصولات
+                .dropdown-menu.product-dropdown
+              li.link.dropdown
+                a.parent__menu__item(href="#") مشتریان
+
+              li.link.dropdown
+                a.parent__menu__item(href="#") مشاوران
+
+              li.link.dropdown
+                a.parent__menu__item(href="#") سوالات متداول
+
+              li.link.dropdown
+                a.parent__menu__item(href="#") مقالات
+
+              li.link.dropdown
+                a.parent__menu__item(href="#") درباره ما
+
+              li.link.dropdown
+                a.parent__menu__item(href="#") تماس با ما
 
         .col-xl-3.col-lg-3.col-md-4.col-sm-3.d-none.d-sm-flex.flex--r--c.column
           include ./_accessible_menu

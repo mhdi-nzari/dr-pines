@@ -4,7 +4,7 @@ block headstyle
   // The initial part of the website
 block header
   // The middle part of the website
-  link(rel="stylesheet", href="/Src/Styles/login&sign.css")
+  link(rel="stylesheet", href="dist/Styles/login&sign.css")
 block content
   - let title = "فرم ورود کاربران";
   - let discription = "برای دسترسی به حساب کاربری با شماره موبایل وارد شوید ";
@@ -13,7 +13,7 @@ block content
   #login_form
     a.logo__link.d-flex.justify-content-center(href="javascript:void(0)") 
       img.logo__link__img(
-        src="/Src/Images/logo_en.png",
+        src="dist/Images/logo_en.png",
         alt="website logo",
         width="",
         height=""
@@ -24,38 +24,107 @@ block content
         p.login--page--title__discription= discription
 
       .login--page--input
-        input.login--page--input__number#number(type="text"  readonly="readonly")
+        input#number.login--page--input__number(
+          type="text",
+          readonly="readonly"
+        )
         label#lable.login--page--input__lable(for="number") شماره تلفن همراه
-        form(action="javascript:void(0)", method="post").input--group
-            input#digit-1(type="text", name="digit-1", data-next="digit-2"  placeholder="_" maxlength='1') 
-            input#digit-2(type="text", name="digit-2", data-previous="digit-1" ,  data-next="digit-3", placeholder="_" maxlength='1') 
-            input#digit-3(type="text", name="digit-3", data-previous="digit-2" ,  data-next="digit-4",  placeholder="_" maxlength='1')
-            input#digit-4(type="text", name="digit-4", data-previous="digit-3" ,  data-next="digit-5",  placeholder="_" maxlength='1')
-            input#digit-5(type="text", name="digit-5", data-previous="digit-4" ,  data-next="digit-6",  placeholder="_" maxlength='1')
-            input#digit-6(type="text", name="digit-6", data-previous="digit-5" ,  data-next="digit-7"   placeholder="_" maxlength='1')
-            input#digit-7(type="text", name="digit-7", data-previous="digit-6" ,  data-next="digit-8"   placeholder="_" maxlength='1')
-            input#digit-8(type="text", name="digit-8", data-previous="digit-7" ,  data-next="digit-9"   placeholder="_" maxlength='1')
-            input#digit-9(type="text", name="digit-9", data-previous="digit-8" ,  data-next="digit-10"   placeholder="_" maxlength='1')
-            input#digit-10(type="text", name="digit-10", data-previous="digit-9" ,placeholder="_" maxlength='1')
-        
-
-
+        form.input--group(action="javascript:void(0)", method="post")
+          input#digit-1(
+            type="text",
+            name="digit-1",
+            data-next="digit-2",
+            placeholder="_",
+            maxlength="1"
+          ) 
+          input#digit-2(
+            type="text",
+            name="digit-2",
+            data-previous="digit-1",
+            data-next="digit-3",
+            placeholder="_",
+            maxlength="1"
+          ) 
+          input#digit-3(
+            type="text",
+            name="digit-3",
+            data-previous="digit-2",
+            data-next="digit-4",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-4(
+            type="text",
+            name="digit-4",
+            data-previous="digit-3",
+            data-next="digit-5",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-5(
+            type="text",
+            name="digit-5",
+            data-previous="digit-4",
+            data-next="digit-6",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-6(
+            type="text",
+            name="digit-6",
+            data-previous="digit-5",
+            data-next="digit-7",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-7(
+            type="text",
+            name="digit-7",
+            data-previous="digit-6",
+            data-next="digit-8",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-8(
+            type="text",
+            name="digit-8",
+            data-previous="digit-7",
+            data-next="digit-9",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-9(
+            type="text",
+            name="digit-9",
+            data-previous="digit-8",
+            data-next="digit-10",
+            placeholder="_",
+            maxlength="1"
+          )
+          input#digit-10(
+            type="text",
+            name="digit-10",
+            data-previous="digit-9",
+            placeholder="_",
+            maxlength="1"
+          )
 
         span#lable.login--page--input__areacode 98+
-        img#disable(src="/dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
-        img#false(src="/dist/Images/false.png", alt="")
-        img#true(src="/dist/Images/true.png", alt="")
+        img#disable(
+          src="dist/Images/disable-incorrect.png",
+          alt="disable_icon",
+          width="fit-content"
+        )
+        img#false(src="dist/Images/false.png", alt="")
+        img#true(src="dist/Images/true.png", alt="")
 
-      a(href="javascript:void(0)").login--page--button__send ورود
+      a.login--page--button__send(href="javascript:void(0)") ورود
 
       .login--page--ifsignup
         span.login--page--ifsignup__one= ifsignup__one
-        a(href="signup.html").login--page--ifsignup__two= ifsignup__two
-
-
-
+        a.login--page--ifsignup__two(href="signup.html")= ifsignup__two
 
 block footer
   // Attached links & Script Which must be loaded at the end
 block script
-  script(src="/Src/Scripts/login.js") 
+  script(src="dist/Scripts/login.js") 

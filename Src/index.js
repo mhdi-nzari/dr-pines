@@ -57,13 +57,47 @@ import buy_2 from "./Images/Buy-2.png";
 
 // login icon
 
-//input 
+//input
 import disable_correct from "./Images/disable-incorrect.png";
 import trues from "./Images/true.png";
 import falses from "./Images/false.png";
 
+// user__panel
+
+import search_icon from "./Images/Search.png";
+import Notification from "./Images/Notification.png";
+import avatar from "./Images/avatar.png";
+
+import home_1 from "./Images/home-ico.svg";
+import wallet from "./Images/wallet-ico.svg";
+import buy_1 from "./Images/buy-ico.svg";
+import bookmark from "./Images/bookmark-ico.svg";
+import setting from "./Images/Setting-ico.svg";
+import logout from "./Images/logout-ico.svg";
+import edit from "./Images/Edit.svg";
+
+
+//favicon
+
+import apple_icon_57x57 from "./Images/favicon/apple-icon-57x57.png";
+import apple_icon_60x60 from "./Images/favicon/apple-icon-60x60.png";
+import apple_icon_72x72 from "./Images/favicon/apple-icon-72x72.png";
+import apple_icon_76x76 from "./Images/favicon/apple-icon-76x76.png";
+import apple_icon_114x114 from "./Images/favicon/apple-icon-114x114.png";
+import apple_icon_120x120 from "./Images/favicon/apple-icon-120x120.png";
+import apple_icon_144x144 from "./Images/favicon/apple-icon-144x144.png";
+import apple_icon_152x152 from "./Images/favicon/apple-icon-152x152.png";
+import apple_icon_180x180 from "./Images/favicon/apple-icon-180x180.png";
+import apple_icon_192x192 from "./Images/favicon/android-icon-192x192.png";
+import favicon_32x32 from "./Images/favicon/favicon-32x32.png";
+import favicon_96x96 from "./Images/favicon/favicon-96x96.png";
+import favicon_16x16 from "./Images/favicon/favicon-16x16.png";
+import ms_icon_144x144 from "./Images/favicon/ms-icon-144x144.png";
+import favicon_ico from "./Images/favicon/favicon.ico";
+
 
 import $ from "./Scripts/jquery.min";
 import bootstrap from "./Scripts/bootstrap.bundle.min";
+
 window.jQuery = $;
 window.$ = $;

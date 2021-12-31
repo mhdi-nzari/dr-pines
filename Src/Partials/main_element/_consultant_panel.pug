@@ -1,0 +1,83 @@
+- var item_1 = "پیشخوان کاربری ";
+- var item_2 = "پروفایل مشاور ";
+- var item_3 = "پیشخوان مشاور ";
+- var item_4 = "در این قسمت پیشنمایش هر بخش مربوط به همان قسمت نمایش داده میشود. ";
+include ./_breadcrumb
+include ./_page_position
+
+section.user--info
+  .container-fluid 
+    .row 
+      .col-xl-12
+        .row.user--info--wrapper.mb-5
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(for="name_family") نام و نام خانوادگی
+            .user--info--wrapper--col--p
+              input#name_family.user--info--wrapper--col--p__input(
+                type="text",
+                placeholder="مثال: علی نصیری"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(for="birth_day") تاریخ تولد
+            .user--info--wrapper--col--p
+              input#birth_day.user--info--wrapper--col--p__input(
+                type="text",
+                placeholder="1385/14/10 : مثال"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(for="mobilenumber") شماره موبایل
+            .user--info--wrapper--col--p
+              input#mobilenumber.user--info--wrapper--col--p__input(
+                type="text",
+                placeholder="09134568565"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+        .row.user--info--wrapper.mb-3
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(for="national_code") کد ملی
+            .user--info--wrapper--col--p
+              input#national_code.user--info--wrapper--col--p__input(
+                type="text",
+                placeholder="مثال : 12506251720"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(
+              for="national_code",
+             
+            ) تخصص
+            .user--info--wrapper--col--p
+              input#national_code.user--info--wrapper--col--p__input( placeholder="مثال : فوق تخصص"
+                type="text"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+          .col-xl-4.user--info--wrapper--col
+            label.user--info--wrapper--col__label(
+              for="national_code",
+              
+            ) سابقه کار
+            .user--info--wrapper--col--p
+              input#national_code.user--info--wrapper--col--p__input( placeholder="مثال : 10 سال"
+                type="text"
+              )
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+
+        .row.user--info--wrapper.mb-3
+          .col-xl-8.user--info--wrapper--col
+            label.user--info--wrapper--col__label(for="discription") توضیحات
+            .user--info--wrapper--col--p
+              textarea#discription.user--info--wrapper--col--p__input(name="discription", cols="3", rows="0" placeholder="مثال : چیزی در اینجا بنویسید")
+              a.user--info--wrapper--col--p__edit(href="")
+                img(src="dist/Images/Edit.svg", alt="edit-ico") 
+
+        .row.user--info--buttons 
+          a.user--info--buttons__confirm(href="") ذخیره تغییرات
+          a.user--info--buttons__cancel(href="") انصراف

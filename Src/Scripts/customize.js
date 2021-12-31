@@ -129,7 +129,7 @@ const swiper_3 = new Swiper("#most--popular--slider", {
     },
 
     940: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
   },
 });
@@ -168,7 +168,7 @@ const swiper_4 = new Swiper("#best--seller--slider", {
     },
 
     940: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
   },
 });
@@ -212,21 +212,3 @@ const blog = new Swiper("#blog--slider", {
   },
 });
 
-// const input_number = document.querySelector("input#number");
-// console.log(input_number);
-// if (input_number === document.activeElement) {
-//  alert('yes')
-// }else{
-// alert('no')
-// }
-
-const price = 8000;
-switch (price > 5000) {
-  case  5000:
-    console.log("hello")
-    
-    break;
-
-  default: console.log('not a number');
-    break;
-}

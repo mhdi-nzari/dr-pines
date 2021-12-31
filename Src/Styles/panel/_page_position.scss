@@ -1,0 +1,19 @@
+.position--page{
+     &__title{
+          ////>>> typographi
+          font-size: 20px;
+          font-weight: 700;
+
+     @media screen and (max-width: 468px) {
+     margin-bottom: 15px;
+         }
+     }
+     &__discription{
+          ////>>> typographi
+          font-size: 14px;
+          margin-top: 10px;
+          font-weight: 400;
+line-height: 2.6rem;
+          color: $color-disable;
+     }
+}

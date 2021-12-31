@@ -1,11 +1,8 @@
 extends src/Partials/_layout
 
 block headstyle
-  // The initial part of the website
-  link(rel="stylesheet", href="./Src/Styles/swiper-bundle.min.css")
-  link(rel="stylesheet", type="text/css", href="/Src/Styles/index/index.css")
-  link(rel="stylesheet", href="/dist/Styles/swiper-bundle.min..css")
-  link(rel="stylesheet", type="text/css", href="/dist/Styles/index/index.css")
+  link(rel="stylesheet", href="dist/Styles/swiper-bundle.min.css")
+  link(rel="stylesheet", type="text/css", href="dist/Styles/index/index.css")
 block header
   include src/Partials/header/_header
   // The middle part of the website
@@ -23,9 +20,7 @@ block footer
 
   // Attached links & Script Which must be loaded at the end
 block script
-  script(src="Scripts/swiper-bundle.min..js") 
-  script(src="Scripts/customize..js") 
-  script(src="./Src/Scripts/swiper-bundle.min.js") 
-  script(src="/Src/Scripts/customize.js") 
+  script(src="dist/Scripts/swiper-bundle.min.js") 
+  script(src="dist/Scripts/customize.js")  
 
   

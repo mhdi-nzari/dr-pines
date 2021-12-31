@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -66,7 +66,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         loader: "file-loader",
         options: {
           name: "[name].[ext]",
@@ -118,33 +118,66 @@ module.exports = {
 
     new CopyPlugin({
       patterns: [
-        { from: "*.html", to: "" },
+        // { from: "*.html", to: "" },
+        {
+          from: "Src/Fonts/fonts/eot/*.eot",
+          to: "Fonts/fonts/eot/[name][ext]",
+        },
+        {
+          from: "Src/Fonts/fonts/svg/*.svg",
+          to: "Fonts/fonts/svg/[name][ext]",
+        },
+        {
+          from: "Src/Fonts/fonts/ttf/*.ttf",
+          to: "Fonts/fonts/ttf/[name][ext]",
+        },
+        {
+          from: "Src/Fonts/fonts/woff/*.woff",
+          to: "Fonts/fonts/woff/[name][ext]",
+        },
         {
           from: "Src/Styles/index/*.css",
-          to: "Styles/index/[name].[ext]",
+          to: "Styles/index/[name][ext]",
         },
         {
           from: "Src/Styles/index/*.map",
-          to: "Styles/index/[name].[ext]",
+          to: "Styles/index/[name][ext]",
         },
+
         {
           from: "Src/Styles/*.css",
-          to: "Styles/[name].[ext]",
+          to: "Styles/[name][ext]",
         },
         {
           from: "Src/Styles/*.map",
-          to: "Styles/[name].[ext]",
+          to: "Styles/[name][ext]",
+        },
+
+        {
+          from: "Src/Styles/panel/*.css",
+          to: "Styles/panel/[name][ext]",
+        },
+        {
+          from: "Src/Styles/panel/*.map",
+          to: "Styles/panel/[name][ext]",
         },
         {
           from: "Src/Scripts/*.js",
-          to: "Scripts/[name].[ext]",
+          to: "Scripts/[name][ext]",
         },
-
-      
-
+        {
+          from: "Src/Images/favicon/favicon.ico",
+          to: "Images/favicon/favicon.ico",
+        },
+        {
+          from: "Src/Images/favicon/*.png",
+          to: "Images/favicon/[name][ext]",
+        },
       ],
     }),
 
     new TerserPlugin(),
+
+   
   ],
 };

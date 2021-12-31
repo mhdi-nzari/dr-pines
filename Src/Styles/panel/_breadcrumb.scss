@@ -1,0 +1,27 @@
+.breadcrumb {
+     background-color: unset;
+     margin-bottom: 3rem;
+     padding: 0;
+  .breadcrumb--parent {
+    @include d-flex;
+    align-items: center;
+span{
+     margin: 0px 7px;
+     color: $text-primary;
+}
+    &__item {
+         
+      
+      color: $color-disable;
+      font-size: 14px;
+      font-weight: 400;
+
+      &.active{
+color: $color-disable;
+font-size: 14px;
+font-weight: 700;
+
+      }
+    }
+  }
+}

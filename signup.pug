@@ -4,7 +4,7 @@ block headstyle
   // The initial part of the website
 block header
   // The middle part of the website
-  link(rel="stylesheet", href="/Src/Styles/login&sign.css")
+  link(rel="stylesheet", href="dist/Styles/login&sign.css")
 block content
   - let title = "فرم ثبت نام کاربران";
   - let discription = "کاربر گرامی لطفا اطلاعات خواسته شده را در فیلد های مربوطه پر نمائید. ";
@@ -13,7 +13,7 @@ block content
   #login_form
     a.logo__link.d-flex.justify-content-center(href="javascript:void(0)") 
       img.logo__link__img(
-        src="/Src/Images/logo_en.png",
+        src="dist/Images/logo_en.png",
         alt="website logo",
         width="",
         height=""
@@ -42,9 +42,9 @@ block content
 
 
         span#lable.login--page--input__areacode 98+
-        img#disable(src="/dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
-        img#false(src="/dist/Images/false.png", alt="")
-        img#true(src="/dist/Images/true.png", alt="")
+        img#disable(src="dist/Images/disable-incorrect.png", alt="disable_icon" width='fit-content')
+        img#false(src="dist/Images/false.png", alt="")
+        img#true(src="dist/Images/true.png", alt="")
 
       a(href="signin.html").login--page--button__send ثبت نام
 
@@ -58,4 +58,4 @@ block content
 block footer
   // Attached links & Script Which must be loaded at the end
 block script
-  script(src="/Src/Scripts/login.js") 
+  script(src="dist/Scripts/login.js") 

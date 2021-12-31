@@ -2,3 +2,4 @@ node_modules
 dist
 dr-pine.zip
 .vscode/
+*.zip

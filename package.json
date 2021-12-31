@@ -6,7 +6,7 @@
   "scripts": {
     "clean-pug": "npx prettier --write **/*.pug",
     "w-dev": "webpack --watch --mode=development",
-    "sass": "sass -w -c --verbose --style=compressed ./Src/.:./Src/.",
+    "sass": "sass -w -c --poll --verbose --style=compressed ./Src/.:./Src/.",
     "pug": "pug -w -P . -o ."
   },
   "keywords": [],

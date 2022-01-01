@@ -1,0 +1,30 @@
+@import "../base";
+@import "../public";
+@import "../panel/aside_menu";
+@import "../panel/breadcrumb";
+@import "../panel/page_position";
+
+body {
+  background-color: $bg-color-2;
+
+  main {
+    margin-right: 300px;
+    padding: 50px 30px;
+
+    @media screen and (min-width: 0px) and (max-width: 967px) {
+      margin: 0;
+    }
+  }
+}
+
+
+.wallet--clearing{
+     margin: 20px 0px;
+
+     .wallet--wrapper {
+          padding: 10px;
+          background-color: #fff;
+          @include border-radius(5px);
+          @include d-flex;
+     }
+}

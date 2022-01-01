@@ -1,0 +1,28 @@
+- var item_1 = "پیشخوان کاربری";
+- var item_2 = "کیف پول و پرداخت ";
+- var item_3 = "کیف پول و درخواست تسویه ";
+- var item_4 = "در این قسمت پیشنمایش هر بخش مربوط به همان قسمت نمایش داده میشود. ";
+include ./_breadcrumb
+include ./_page_position
+
+section.wallet--clearing
+  .container-fluid 
+    .row 
+     .col-xl-4
+        .wallet--wrapper 
+          .wallet--wrapper--icon 
+            img(src="dist/Images/Wallet.png", alt="")
+          .wallet--wrapper--detail
+               p.wallet--wrapper--detail__title موجودی کیف پول من
+               .wallet--wrapper--detail__price
+                    p.wallet--wrapper--detail__price__main 576،000
+                     span تومان
+                    p.wallet--wrapper--detail__price__offer
+               a.wallet--wrapper--detail__checkout(href="javascript:void(0)") تسویه حساب
+
+
+                   
+               
+               
+
+     .col-xl-4

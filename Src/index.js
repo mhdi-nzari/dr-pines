@@ -96,6 +96,11 @@ import ms_icon_144x144 from "./Images/favicon/ms-icon-144x144.png";
 import favicon_ico from "./Images/favicon/favicon.ico";
 
 
+//wallet 
+import Wallet from "./Images/Wallet.png";
+
+
+
 import $ from "./Scripts/jquery.min";
 import bootstrap from "./Scripts/bootstrap.bundle.min";
 

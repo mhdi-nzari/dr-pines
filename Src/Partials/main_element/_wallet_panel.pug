@@ -7,22 +7,129 @@ include ./_page_position
 
 section.wallet--clearing
   .container-fluid 
-    .row 
-     .col-xl-4
+    .row.flex-wrap
+      .col-xl-4.col-lg-6.col-md-6.col-sm-6.col-12.mb-5
         .wallet--wrapper 
-          .wallet--wrapper--icon 
-            img(src="dist/Images/Wallet.png", alt="")
+          .wallet--wrapper--icons.d-none.d-md-flex 
+            img.wallet--wrapper--icons--icon(
+              src="dist/Images/Wallet.png",
+              alt=""
+            )
           .wallet--wrapper--detail
-               p.wallet--wrapper--detail__title موجودی کیف پول من
-               .wallet--wrapper--detail__price
-                    p.wallet--wrapper--detail__price__main 576،000
-                     span تومان
-                    p.wallet--wrapper--detail__price__offer
-               a.wallet--wrapper--detail__checkout(href="javascript:void(0)") تسویه حساب
+            p.wallet--wrapper--detail__title موجودی کیف پول من
+              .wallet--wrapper--detail__price
+                p.wallet--wrapper--detail__price__main 576،000
+                  span.wallet--wrapper--detail__price__main__span تومان
 
+                .wallet--wrapper--detail__price__percent
+                  img.wallet--wrapper--detail__price__percent__ico(
+                    src="dist/Images/Down_2.svg",
+                    alt="arrowe-down"
+                  ) 
+                  p.percent 0.5%
+                p.wallet--wrapper--detail__price__offer
+          a.wallet--wrapper--detail__checkout(href="javascript:void(0)") تسویه حساب
 
-                   
-               
-               
+      .col-xl-4.col-lg-6.col-md-6.col-sm-6.col-12.mb-5
+        .wallet--wrapper 
+          .wallet--wrapper--icons.d-none.d-md-flex 
+            img.wallet--wrapper--icons--icon(
+              src="dist/Images/Wallet.png",
+              alt=""
+            )
+          .wallet--wrapper--detail
+            p.wallet--wrapper--detail__title موجودی کیف پول من
+              .wallet--wrapper--detail__price
+                p.wallet--wrapper--detail__price__main 576،000
+                  span.wallet--wrapper--detail__price__main__span تومان
 
-     .col-xl-4
+                .wallet--wrapper--detail__price__percent
+                  img.wallet--wrapper--detail__price__percent__ico(
+                    src="dist/Images/Down_2.svg",
+                    alt="arrowe-down"
+                  ) 
+                  p.percent 0.5%
+                p.wallet--wrapper--detail__price__offer
+          a.wallet--wrapper--detail__checkout(href="javascript:void(0)") تسویه حساب
+- var item_3 = "جزئیات درخواست تسویه حساب";
+- var item_4 = "در این قسمت پیشنمایش هر بخش مربوط به همان قسمت نمایش داده میشود. ";
+include ./_page_position
+section.bill--detail
+  .table-responsive
+    table.table.table-hover
+      thead.bill--detail--thead
+        tr
+          th.bill--detail--thead__th(scope="col") #
+          th.bill--detail--thead__th(scope="col") کد پیگیری
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+          th.bill--detail--thead__th(scope="col") نام درخواست
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+
+          th.bill--detail--thead__th(scope="col") مبلغ تسویه
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+
+          th.bill--detail--thead__th(scope="col") تاریخ ثبت درخواست
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+
+          th.bill--detail--thead__th(scope="col") وضعیت تائید
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+
+          th.bill--detail--thead__th(scope="col") توضیحات
+            img.bill--detail--thead__th__img(src="dist/Images/Down3.svg", alt="arrow-down")
+
+      tbody.bill--detail--tbody
+        tr
+          th.bill--detail--tbody__th(scope="row") 1
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-primary تایید شد
+          td.bill--detail--tbody--td توضیحات
+        tr
+          th.bill--detail--tbody__th(scope="row") 2
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-warning تایید شد
+          td.bill--detail--tbody--td توضیحات
+        tr
+          th.bill--detail--tbody__th(scope="row") 3
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-info تایید شد
+          td.bill--detail--tbody--td توضیحات
+        tr
+          th.bill--detail--tbody__th(scope="row") 4
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-danger تایید شد
+          td.bill--detail--tbody--td توضیحات
+        tr
+          th.bill--detail--tbody__th(scope="row") 5
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-dark تایید شد
+          td.bill--detail--tbody--td توضیحات
+        tr
+          th.bill--detail--tbody__th(scope="row") 6
+          th.bill--detail--tbody__th(scope="row") #57896
+          td.bill--detail--tbody--td تسویه حساب
+          td.bill--detail--tbody--td 565،000
+          td.bill--detail--tbody--td 1400/14/00
+          td.bill--detail--tbody--td 
+            button.btn.btn-lg.btn-outline-success تایید شد
+          td.bill--detail--tbody--td توضیحات
+        

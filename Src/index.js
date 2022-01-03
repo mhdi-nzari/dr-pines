@@ -98,6 +98,8 @@ import favicon_ico from "./Images/favicon/favicon.ico";
 
 //wallet 
 import Wallet from "./Images/Wallet.png";
+import Down_2 from "./Images/Down_2.svg";
+import Down3 from "./Images/Down3.svg";
 
 
 

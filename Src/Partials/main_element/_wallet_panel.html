@@ -25,20 +25,134 @@
 </section>
 <section class="wallet--clearing">
   <div class="container-fluid"> 
-    <div class="row"> 
-      <div class="col-xl-4">
+    <div class="row flex-wrap">
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
         <div class="wallet--wrapper"> 
-          <div class="wallet--wrapper--icon"> <img src="dist/Images/Wallet.png" alt=""/></div>
+          <div class="wallet--wrapper--icons d-none d-md-flex"> <img class="wallet--wrapper--icons--icon" src="dist/Images/Wallet.png" alt=""/></div>
           <div class="wallet--wrapper--detail">
-            <p class="wallet--wrapper--detail__title">موجودی کیف پول من</p>
-            <div class="wallet--wrapper--detail__price">
-              <p class="wallet--wrapper--detail__price__main">576،000<span>تومان</span></p>
-              <p class="wallet--wrapper--detail__price__offer"></p>
-            </div><a class="wallet--wrapper--detail__checkout" href="javascript:void(0)">تسویه حساب</a>
-          </div>
+            <p class="wallet--wrapper--detail__title">موجودی کیف پول من
+              <div class="wallet--wrapper--detail__price">
+                <p class="wallet--wrapper--detail__price__main">576،000<span class="wallet--wrapper--detail__price__main__span">تومان</span></p>
+                <div class="wallet--wrapper--detail__price__percent"><img class="wallet--wrapper--detail__price__percent__ico" src="dist/Images/Down_2.svg" alt="arrowe-down"/>
+                  <p class="percent">0.5%</p>
+                </div>
+                <p class="wallet--wrapper--detail__price__offer"></p>
+              </div>
+            </p>
+          </div><a class="wallet--wrapper--detail__checkout" href="javascript:void(0)">تسویه حساب</a>
         </div>
       </div>
-      <div class="col-xl-4"></div>
+      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
+        <div class="wallet--wrapper"> 
+          <div class="wallet--wrapper--icons d-none d-md-flex"> <img class="wallet--wrapper--icons--icon" src="dist/Images/Wallet.png" alt=""/></div>
+          <div class="wallet--wrapper--detail">
+            <p class="wallet--wrapper--detail__title">موجودی کیف پول من
+              <div class="wallet--wrapper--detail__price">
+                <p class="wallet--wrapper--detail__price__main">576،000<span class="wallet--wrapper--detail__price__main__span">تومان</span></p>
+                <div class="wallet--wrapper--detail__price__percent"><img class="wallet--wrapper--detail__price__percent__ico" src="dist/Images/Down_2.svg" alt="arrowe-down"/>
+                  <p class="percent">0.5%</p>
+                </div>
+                <p class="wallet--wrapper--detail__price__offer"></p>
+              </div>
+            </p>
+          </div><a class="wallet--wrapper--detail__checkout" href="javascript:void(0)">تسویه حساب</a>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+<section class="position--page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="position--page__title">جزئیات درخواست تسویه حساب</h3>
+        <p class="position--page__discription">در این قسمت پیشنمایش هر بخش مربوط به همان قسمت نمایش داده میشود. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bill--detail">
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead class="bill--detail--thead">
+        <tr>
+          <th class="bill--detail--thead__th" scope="col">#</th>
+          <th class="bill--detail--thead__th" scope="col">کد پیگیری<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+          <th class="bill--detail--thead__th" scope="col">نام درخواست<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+          <th class="bill--detail--thead__th" scope="col">مبلغ تسویه<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+          <th class="bill--detail--thead__th" scope="col">تاریخ ثبت درخواست<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+          <th class="bill--detail--thead__th" scope="col">وضعیت تائید<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+          <th class="bill--detail--thead__th" scope="col">توضیحات<img class="bill--detail--thead__th__img" src="dist/Images/Down3.svg" alt="arrow-down"/></th>
+        </tr>
+      </thead>
+      <tbody class="bill--detail--tbody">
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">1</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-primary">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">2</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-warning">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">3</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-info">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">4</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-danger">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">5</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-dark">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+        <tr>
+          <th class="bill--detail--tbody__th" scope="row">6</th>
+          <th class="bill--detail--tbody__th" scope="row">#57896</th>
+          <td class="bill--detail--tbody--td">تسویه حساب</td>
+          <td class="bill--detail--tbody--td">565،000</td>
+          <td class="bill--detail--tbody--td">1400/14/00</td>
+          <td class="bill--detail--tbody--td"> 
+            <button class="btn btn-lg btn-outline-success">تایید شد</button>
+          </td>
+          <td class="bill--detail--tbody--td">توضیحات</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>

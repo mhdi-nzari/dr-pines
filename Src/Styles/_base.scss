@@ -10,6 +10,7 @@
   --bg-color: #f9f9f9;
   --bg-color2: #f3f3f3;
   --warning: #dc5151;
+  --border-table:#F6F6F6;
 }
 
 $color-base: var(--data-color);
@@ -20,6 +21,7 @@ $text-default: var(--color-default);
 $background-item: var(--backgorund-item);
 $bg-color-2: var(--bg-color2);
 $color-disable: var(--color-disable);
+$border-table:var(--border-table);
 
 //***** box-shadow
 $enable-shadows: false !default;

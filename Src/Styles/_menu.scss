@@ -338,6 +338,11 @@
         &__text {
           font-size: 14px;
           margin-left: 3px;
+
+          @media screen and (max-width: 1024px) {
+            font-size: 12px;
+          
+              }
         }
 
         &__ico {

@@ -1,0 +1,20 @@
+extends src/Partials/_layout
+block headstyle
+  // The initial part of the website
+  link(
+    rel="stylesheet",
+    type="text/css",
+    href="dist/Styles/panel/consultant_list.css"
+  )
+block header
+  include src/Partials/header/_header
+  // The middle part of the website
+  include src/Partials/main_element/_static_menu
+block content
+  include src/Partials/main_element/_consultant_list
+  include src/Partials/main_element/_mobile_menu
+
+block footer
+  // Attached links & Script Which must be loaded at the end
+block script
+  script(src="dist/Scripts/panel.js") 

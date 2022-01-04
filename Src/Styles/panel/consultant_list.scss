@@ -1,0 +1,217 @@
+@import "../base";
+@import "../public";
+@import "../panel/static_menu";
+@import "../panel/breadcrumb";
+@import "../panel/page_position";
+
+img {
+  cursor: default;
+}
+body {
+  ////>>>>typographi
+  background-color: $bg-color-2;
+
+  main {
+    ////>>>> size & position
+    padding: 50px 30px;
+
+    ////>>>> mediaquery
+    @media screen and (min-width: 0px) and (max-width: 967px) {
+      margin: 0;
+    }
+  }
+}
+
+.search--bar {
+  margin: 30px 0px;
+  &--form {
+    ////>>>> size & position & typographi
+    @include d-flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    @include border-radius(5px);
+    background-color: #efefef;
+    width: 100%;
+    overflow-x: hidden;
+
+    &--title,
+    &--expert,
+    &--rate,
+    &--history {
+      ////>>>> size & position
+      position: relative;
+      &__input {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        ////>>>> size & position
+
+        padding: 10px 20px 10px 60px;
+        @include border-radius(5px);
+      }
+      &--image {
+        position: absolute;
+        left: 20px;
+        top: 0px;
+        height: 100%;
+        @include flex--custome(row, unset, center);
+      }
+    }
+
+    input {
+      font-size: 13px;
+
+      &::placeholder {
+        font-size: 13px;
+        font-weight: 400;
+        color: $text-default;
+      }
+    }
+
+    .search--bar--form--submit {
+      ////>>>> size & position & typographi
+      background-color: #424242;
+      color: #fff;
+      border: 1px solid #424242;
+      @include transition(all 500ms ease-in-out);
+      @include border-radius(5px);
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 800;
+      margin: 0 auto;
+      width: 100%;
+      &:hover {
+        background-color: unset;
+        color: $text-primary;
+        border: 1px solid #424242;
+      }
+    }
+  }
+}
+
+
+.bill--detail {
+     margin-top: 3rem;
+     background-color: #fff;
+     @include border-radius(7px);
+
+   
+     .table-responsive {
+       padding: 0px 30px;
+       border-top: 5px solid $color-base;
+       @include border-radius(7px);
+
+       .table{
+          border-collapse: separate;
+          border-spacing: 0 24px;
+
+
+          tbody tr{
+               @include border-radius(5px);
+          }
+          tbody th , tbody td {
+              padding: 20px 5px;  
+             }
+          tbody th:nth-child(1) {
+              padding: 25px 0px;  
+             }
+       }
+     }
+   
+     &--thead {
+       &__th {
+         font-size: 16px;
+         color: #69687f;
+         font-weight: 500;
+         white-space: nowrap;
+         &__img {
+           margin-right: 5px;
+           vertical-align: middle;
+         }
+       }
+
+       
+     }
+   
+     .table th,
+     .table td {
+       border: none;
+       text-align: center;
+       font-weight: 400;
+       
+     }
+     .table thead th , .table tbody td ,.table tbody th{ 
+       padding: 10px 0;
+   
+       @media screen and (max-width: 768px) {
+         padding: 10px 20px;
+           }
+   
+     }
+   
+     .bill--detail .table tbody td{
+       font-size: 14px;
+     }
+    
+    
+   
+     &--tbody {
+          tr{
+               @include box-shadow();
+              
+          }
+       &__th {
+         font-weight: 600;
+         font-size: 15px;
+         white-space: nowrap;        
+       }
+
+       &__th:nth-child(1){
+          color: #fff;
+              position: relative;
+              z-index: 5;
+              padding: 25px 0;
+     
+              &::after{
+                   position: absolute;
+                   right: 0;
+                   top: 0;
+                   width: 2.3rem;
+                   height: 100%;
+                   background-color: $color-base;
+                   content: '';
+                   z-index: -5;
+                   border-top-right-radius: 5px;
+                   border-bottom-right-radius: 5px;
+     
+              }
+       }
+   
+       &--td {
+         font-weight: 400;
+         font-size: 15px;
+         white-space: nowrap;
+   
+       }
+
+
+       #reservation{
+            padding: 3px 35px;
+            background-color: $color-base;font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid $color-base;
+@include transition(all 500ms ease-in-out);
+
+            &:hover{
+                 background-color: unset;
+                 color: $color-base;
+                 border: 1px solid $color-base;
+            }
+
+       }
+     }
+   }
+   

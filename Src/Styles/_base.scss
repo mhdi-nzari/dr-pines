@@ -25,7 +25,7 @@ $border-table:var(--border-table);
 
 //***** box-shadow
 $enable-shadows: false !default;
-$shadow-base: 0 8px 24px rgba(0, 0, 0, 15%) !default;
+$shadow-base: 0 8px 24px rgba(0, 0, 0, 10%) !default;
 @mixin box-shadow($shadow...) {
   @if length($shadow) ==0 {
     -webkit-box-shadow: $shadow-base;

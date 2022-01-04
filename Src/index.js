@@ -101,6 +101,13 @@ import Wallet from "./Images/Wallet.png";
 import Down_2 from "./Images/Down_2.svg";
 import Down3 from "./Images/Down3.svg";
 
+//consulatant_list
+import search_ico from "./Images/search-ico.svg";
+import paper_ico from "./Images/paper-ico.svg";
+import star_ico from "./Images/star-ico.svg";
+import forward_ico from "./Images/forward-ico.svg";
+
+
 
 
 import $ from "./Scripts/jquery.min";

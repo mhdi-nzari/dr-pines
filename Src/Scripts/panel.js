@@ -19,7 +19,6 @@ burgers.onclick = function () {
 mediaquery();
 function mediaquery() {
   let start =  document.querySelector(".style");
-  console.log(start);
   if (matchmedia.matches) {
     start.classList.add("open");
   }

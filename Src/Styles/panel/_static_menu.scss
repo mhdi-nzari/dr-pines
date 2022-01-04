@@ -1,0 +1,182 @@
+#asidemenu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 282px;
+  height: 100%;
+  background-color: #fff;
+  margin-top: 80px;
+  @include transition(right 500ms ease-in-out);
+
+  &.style.close {
+    right: -300px;
+    z-index: 2;
+  }
+  &.style.open {
+    right: 0px;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 968px) {
+    margin-top: 60px;
+    z-index: 2;
+
+    &.style.close {
+      right: -300px;
+      z-index: 2;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 968px) {
+    margin-top: 60px;
+    z-index: 2;
+
+    &.style.open {
+      right: 0px;
+      z-index: 2;
+    }
+  }
+
+  .asidemenu--nav {
+    margin: 50px 0px;
+
+    &--parent {
+      &__link {
+        position: relative;
+        width: 100%;
+        @include d-flex;
+        align-items: center;
+        padding: 10px 20px;
+        @include transition(400ms all ease-in-out);
+
+        &__item {
+          // typographi && size
+          margin-right: 10px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &__image {
+          background-color: $background-item;
+          padding: 10px;
+          @include border-radius(5px);
+          @include flex--custome(row, center, center);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 100%;
+          right: -10px;
+          top: 0;
+          background-color: $color-base;
+          @include transition(400ms all ease-in-out);
+        }
+        &:hover {
+          background-color: rgba(77, 146, 66, 0.2);
+          color: $color-base;
+
+          .asidemenu--nav--parent__link__image {
+            background-color: $color-base;
+
+            &__ico {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
+                saturate(17%) hue-rotate(276deg) brightness(104%) contrast(103%);
+            }
+          }
+          &::after {
+            right: 0;
+          }
+        }
+      }
+
+      .asidemenu--nav--parent__link.active {
+        background-color: rgba(77, 146, 66, 0.2);
+        color: $color-base;
+
+        &::after {
+          right: 0;
+        }
+
+        .asidemenu--nav--parent__link__image {
+          background-color: $color-base;
+
+          &__ico {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
+              saturate(17%) hue-rotate(276deg) brightness(104%) contrast(103%);
+          }
+        }
+      }
+    }
+
+    &--parent2 {
+      margin-top: 50px;
+
+      &__link {
+        position: relative;
+        width: 100%;
+        @include d-flex;
+        align-items: center;
+        padding: 10px 20px;
+        @include transition(400ms all ease-in-out);
+
+        &__item {
+          // typographi && size
+          margin-right: 10px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        &__image {
+          background-color: $background-item;
+          padding: 10px;
+          @include border-radius(5px);
+          @include flex--custome(row, center, center);
+        }
+
+        &:last-child {
+          margin-top: 70px;
+          color: $color-warning;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 100%;
+          right: -10px;
+          top: 0;
+          background-color: $color-base;
+          @include transition(400ms all ease-in-out);
+        }
+        &:hover {
+          background-color: rgba(77, 146, 66, 0.2);
+          color: $color-base;
+
+          .asidemenu--nav--parent2__link__image {
+            background-color: $color-base;
+
+            &__ico {
+              filter: brightness(0) saturate(100%) invert(100%) sepia(96%)
+                saturate(17%) hue-rotate(276deg) brightness(104%) contrast(103%);
+            }
+          }
+          &::after {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #asidemenu {
+    display: unset;
+  }
+}
+@media screen and (min-width: 769px) {
+  #asidemenu {
+    display: none;
+  }
+}

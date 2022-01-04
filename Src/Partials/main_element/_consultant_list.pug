@@ -1,0 +1,158 @@
+- var item_1 = "مشاوران";
+- var item_2 = "لیست مشاورین";
+- var item_3 = "لیست مشاورین ";
+- var item_4 = "";
+include ./_breadcrumb
+include ./_page_position
+
+section.search--bar 
+  .container 
+    .row 
+      form.search--bar--form(action="get")
+        .col-xl-3
+          .search--bar--form--title
+            input.search--bar--form--title__input(
+              width="60px",
+              type="text",
+              name="",
+              placeholder="بدنبال چه چیزی هستید ...؟"
+            ) 
+            .search--bar--form--title--image
+              img.search--bar--form--title--image__img(
+                src="dist/images/search-ico.svg",
+                alt="search-ico"
+              )
+
+        .col 
+          .search--bar--form--expert
+            input.search--bar--form--expert__input(
+              type="text",
+              name="",
+              placeholder="تخصص یا حرفه ..."
+            ) 
+            .search--bar--form--expert--image
+              img.search--bar--form--expert--image__img(
+                src="dist/images/paper-ico.svg",
+                alt="paper-ico"
+              )
+        .col 
+          .search--bar--form--rate
+            input.search--bar--form--rate__input(
+              type="text",
+              name="",
+              placeholder="امتیاز مشاور"
+            ) 
+            .search--bar--form--rate--image
+              img.search--bar--form--rate__img(
+                src="dist/images/star-ico.svg",
+                alt="paper-ico"
+              )
+        .col 
+          .search--bar--form--history
+            input.search--bar--form--history__input(
+              type="text",
+              name="",
+              placeholder="سابقه مشاور"
+            ) 
+            .search--bar--form--history--image
+              img.search--bar--form--history__img(
+                src="dist/images/forward-ico.svg",
+                alt="paper-ico"
+              )
+        .col-xl-2
+          button.search--bar--form--submit(type="submit") جستجو اطلاعات
+section.bill--detail
+               .table-responsive
+                    table.table
+                              thead.bill--detail--thead
+                                   tr
+                                        th.bill--detail--thead__th(scope="col") 
+                                        th.bill--detail--thead__th(scope="col") نام مشاور
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+                                        th.bill--detail--thead__th(scope="col") تخصص یا مهارت
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+
+                                        th.bill--detail--thead__th(scope="col") میزان تحصیلات
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+
+                                        th.bill--detail--thead__th(scope="col") سابقه کاری
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+
+                                        th.bill--detail--thead__th(scope="col") توضیحات
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+                                        th.bill--detail--thead__th(scope="col") 
+                                             //- img.bill--detail--thead__th__img(
+                                             //- src="dist/Images/Down3.svg",
+                                             //- alt="arrow-down"
+                                             //- )
+
+                              tbody.bill--detail--tbody
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 1
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 2
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 3
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 4
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 5
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
+                                   tr
+                                        th.bill--detail--tbody__th(scope="row") 6
+                                        th.bill--detail--tbody__th(scope="row") علیرضا مصیبی
+                                        td.bill--detail--tbody--td فوق تخصص اعصاب
+                                        td.bill--detail--tbody--td لیسانس
+                                        td.bill--detail--tbody--td 10 سال
+                                        td.bill--detail--tbody--td توضیحات
+                                        td.bill--detail--tbody--td 
+                                             button.btn.btn-lg#reservation رزرو
